@@ -1,0 +1,460 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+nav {
+  height: 9vh;
+  background-color: #232f3e;
+  margin: 0 2vw;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: sticky;
+}
+
+.prime {
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sports button {
+  color: white;
+}
+
+.movies button {
+  color: white;
+}
+
+.tv button {
+  color: white;
+}
+
+.home button {
+  color: white;
+}
+
+.pv {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hr {
+  font-size: 30px;
+  color: rgb(108, 118, 128);
+}
+
+.logo img {
+  width: 3vw;
+}
+
+.combo {
+  position: absolute;
+  left: 90vw;
+}
+.redone {
+  object-fit: cover;
+}
+.combo .box-icon {
+  color: white;
+}
+
+.top-red {
+  margin-top: -60vh;
+}
+.feature {
+  font-size: 1.75vw;
+  font-weight: bold;
+  margin-left: 1.5vw;
+  color: white;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+  margin: 0 1vw;
+}
+
+.beast {
+  width: 20vw;
+  height: 55vh;
+  transition: width 1s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/beast1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.beast video {
+  display: none;
+}
+
+.beast:hover {
+  width: 40vw;
+}
+
+.beast:hover video {
+  display: block;
+}
+
+.cross {
+  width: 20vw;
+  height: 55vh;
+  transition: 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/cross1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cross video {
+  display: none;
+}
+
+.cross:hover {
+  width: 40vw;
+}
+
+.cross:hover video {
+  display: block;
+}
+
+.secret {
+  width: 20vw;
+  height: 55vh;
+  transition: width 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/secret1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.secret video {
+  display: none;
+}
+
+.secret:hover {
+  width: 40vw;
+}
+
+.secret:hover video {
+  display: block;
+}
+
+.intentions {
+  width: 20vw;
+  height: 55vh;
+  transition: width 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/intentions1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.intentions video {
+  display: none;
+}
+
+.intentions:hover {
+  width: 40vw;
+}
+
+.intentions:hover video {
+  display: block;
+}
+
+.sticky {
+  width: 20vw;
+  height: 55vh;
+  transition: width 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/sticky1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sticky video {
+  display: none;
+}
+
+.sticky:hover {
+  width: 40vw;
+}
+
+.sticky:hover video {
+  display: block;
+}
+.main2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  margin: 0 1vw;
+  margin-top: 2vh;
+}
+.alone {
+  width: 25%;
+}
+.club {
+  width: 25%;
+}
+.island {
+  width: 25%;
+}
+.nodeal {
+  width: 25%;
+}
+.alone img {
+  border-radius: 15px;
+  width: 100%;
+}
+.alone img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.club img {
+  border-radius: 15px;
+  width: 100%;
+}
+.club img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.island img {
+  border-radius: 15px;
+  width: 100%;
+}
+.island img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.nodeal img {
+  border-radius: 15px;
+  width: 100%;
+}
+.nodeal img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.main3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+  margin: 1vw;
+}
+
+.evolation {
+  width: 20vw;
+  height: 55vh;
+  transition: width 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/evolation.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.evolation video {
+  display: none;
+}
+
+.evolation:hover {
+  width: 40vw;
+}
+
+.evolation:hover video {
+  display: block;
+}
+
+.faceoff {
+  width: 20vw;
+  height: 55vh;
+  transition: 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/faceoff.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.faceoff video {
+  display: none;
+}
+
+.faceoff:hover {
+  width: 40vw;
+}
+
+.faceoff:hover video {
+  display: block;
+}
+.game {
+  width: 20vw;
+  height: 55vh;
+  transition: width 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/game.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.game video {
+  display: none;
+}
+
+.game:hover {
+  width: 40vw;
+}
+
+.game:hover video {
+  display: block;
+}
+.game7 {
+  width: 20vw;
+  height: 55vh;
+  transition: width 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/game7.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.game7 video {
+  display: none;
+}
+
+.game7:hover {
+  width: 40vw;
+}
+
+.game7:hover video {
+  display: block;
+}
+.undercover {
+  width: 20vw;
+  height: 55vh;
+  transition: width 2s;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(./images/undercover.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.undercover video {
+  display: none;
+}
+
+.undercover:hover {
+  width: 40vw;
+}
+
+.undercover:hover video {
+  display: block;
+}
+
+.most {
+  margin-top: 1vh;
+  font-size: 1.75vw;
+  font-weight: bold;
+  margin-left: 1.5vw;
+  color: white;
+}
+.popular {
+  margin-top: 1vh;
+  font-size: 1.75vw;
+  font-weight: bold;
+  margin-left: 1.5vw;
+  color: white;
+}
+.sport {
+  margin-top: 1vh;
+  font-size: 1.75vw;
+  font-weight: bold;
+  margin-left: 1.5vw;
+  color: white;
+}
+
+.main4 {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  margin: 0 1vw;
+  margin-top: 2vh;
+}
+.offroad {
+  width: 25%;
+}
+.pop {
+  width: 25%;
+}
+.ahora {
+  width: 25%;
+}
+.betty {
+  width: 25%;
+}
+.offroad img {
+  border-radius: 15px;
+  width: 100%;
+}
+.offroad img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.pop img {
+  border-radius: 15px;
+  width: 100%;
+}
+.pop img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.ahora img {
+  border-radius: 15px;
+  width: 100%;
+}
+.ahora img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.betty img {
+  border-radius: 15px;
+  width: 100%;
+}
+.betty img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.back{
+    width: 100%;
+    padding: 2vh;
+    background-color:rgb(31, 30, 30) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;margin-top: 2vh;
+
+}
+.back a{
+    text-decoration: none;
+    color: white;
+}
