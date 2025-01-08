@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.first{
+    background-image: url('./images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1vw;
+    padding-top: 8vw;
+
+
+}
+.first strike{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.first h1{
+    font-size: 3vw;
+}
+.first img{
+    width: 10vw;
+}
+.first span{
+    font-size: 1.7vw;
+}
+.first button{
+    width: 7vw;
+    height: 6vh;
+    border-radius: 40px;
+    border-color: white;
+    font-size: 1vw;
+}
+.first p{
+    font-size: 1.2vw;
+}
+.col{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.col img{
+    width: 1.5vw;
+}
+.million{
+    background-color: white;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+}
+.audi{
+    background-color: rgb(31, 30, 30);
+    font-size: 1.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.free{
+    background-image: url(./images/bgb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1vw;
+    padding-top: 8vw;
+}
+.free h1{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.free img{
+    width: 10vw;
+}
+.free p{
+    font-size: 1.75vw;
+}
+.free button{
+    width: 8vw;
+    height: 6vh;
+    border-radius: 40px;
+    background-color: rgb(186, 125, 243);
+    font-size: 1vw;
+    font-weight: 500;
+    border-color: rgb(186, 125, 243);
+}
+.want{
+    background-color: rgb(31, 30, 30);
+    font-size: 1.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.want a{
+    color: rgb(165, 145, 184);
+}
+.want span{
+    font-weight: bold;
+    font-size: 1.5vw;
+
+}
+.discover{
+    background-color: white;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+}
+.get{
+    background-color: rgb(70, 194, 194);
+    font-size: 1.5vw;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    
+}
+.get a{
+    color: black;
+}
+.get img{
+    width: 10vw;
+}
+.ex{
+    font-size: 1.75vw;
+    font-weight: bold;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.ex a{
+    color: white;
+}
+.sp{
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid white;
+
+}
+.hd{
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.offer{
+    background-color: white;
+   margin: 5vw;
+}
+.offer span{
+    font-weight: bold;
+}
+.back{
+    width: 100%;
+    padding: 2vh;
+    background-color:rgb(31, 30, 30) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.back a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw;
+}
+.nav img{
+    width: 10vw;
+    margin-left: 2vw;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1\vw;
+}
+.open a img{
+    width: 2vw;
+}
+.nav_item{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;    
+}
+.open {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
