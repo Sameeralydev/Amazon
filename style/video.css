@@ -95,7 +95,7 @@ nav {
 
 .beast {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: width 1s;
   overflow: hidden;
   border-radius: 10px;
@@ -118,7 +118,7 @@ nav {
 
 .cross {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: 2s;
   overflow: hidden;
   border-radius: 10px;
@@ -141,7 +141,7 @@ nav {
 
 .secret {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: width 2s;
   overflow: hidden;
   border-radius: 10px;
@@ -164,7 +164,7 @@ nav {
 
 .intentions {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: width 2s;
   overflow: hidden;
   border-radius: 10px;
@@ -187,7 +187,7 @@ nav {
 
 .sticky {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: width 2s;
   overflow: hidden;
   border-radius: 10px;
@@ -268,7 +268,7 @@ nav {
 
 .evolation {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: width 2s;
   overflow: hidden;
   border-radius: 10px;
@@ -292,7 +292,7 @@ nav {
 
 .faceoff {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: 2s;
   overflow: hidden;
   border-radius: 10px;
@@ -314,7 +314,7 @@ nav {
 }
 .game {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: width 2s;
   overflow: hidden;
   border-radius: 10px;
@@ -336,7 +336,7 @@ nav {
 }
 .game7 {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: width 2s;
   overflow: hidden;
   border-radius: 10px;
@@ -358,7 +358,7 @@ nav {
 }
 .undercover {
   width: 20vw;
-  height: 55vh;
+  height: 50vh;
   transition: width 2s;
   overflow: hidden;
   border-radius: 10px;
