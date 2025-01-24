@@ -5,7 +5,7 @@
 }
 .h-wrapper{
     padding: 0 2vh;
-    height: 7vh;
+    height: 9vh;
     background-color: #131921;
     display: flex;
     align-items: center;
@@ -23,8 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
-    width: 6vw;
+    height: 100%;
+    width: 8vw;
 }
 .h-logo:hover{
     
@@ -34,8 +34,9 @@
 
 .h-logo a img{
     padding-left: 1vh;
-    height: 60%;
-    width: 90%;
+    padding-right: 1vh;
+    height: 80%;
+    width: 100%;
 }
 .h-cntry{
     color: white;
@@ -52,11 +53,15 @@
 
 .cntry-title{
     color: white;
-    line-height: 0vh;
+    line-height: .5vh;
     margin-bottom: 1vh;
 }
+.cntry-logo{
+    font-size: 2.6vh;
+}
 .cntry-title p{
-    font-size: 1.5vh;
+    font-size: 1.6vh;
+    color: #A8A7AB;
 }
 .cntry-title span{
     font-size: 2vh;
@@ -68,7 +73,7 @@
 .h-srch{
     display: flex;
     height: 70%;
-    width: 58vw;
+    width: 54vw;
     /* background-color: aliceblue; */
     border-radius: 3px;
 }
@@ -80,7 +85,7 @@
     font-size: 1.5vh;
     border: 1px solid #E6E6E6;
     height: 100%;
-    width: 3vw;
+    width: 3.5vw;
 }
 .h-srch select:hover{
     border: 3px solid #FF9900;
@@ -96,12 +101,15 @@
     height: 100%;
 }
 .h-srch button{
-    width: 2.5vw;
+    width: 4vw;
     height: 100%;
     border: 1px solid #FEBD69;
     border-top-right-radius:5px ;
     border-bottom-right-radius:5px ;
     background-color: #FEBD69;
+}
+.h-srch button i{
+    font-size: 2.5vh;
 }
 .h-srch button:hover{
     background-color: #F3A847;
@@ -113,7 +121,6 @@
     gap: .3vh;
     height: 80%;
     width: 4vw;
-    margin-left: 3vh;
 }
 .h-lang:hover{
     border: 1.5px solid white;
@@ -136,7 +143,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 7vw;
+    width: 8vw;
     color: white;
     height: 90%;
     color: white;
@@ -150,11 +157,11 @@
 }
 
 .h-acc-list p{  
-    font-size: 1.4vh;
-    font-weight: 600;
+    font-size: 1.7vh;
+    font-weight: 500;
 }
 .h-acc-list span{
-    font-size: 1.7vh;
+    font-size: 2vh;
     font-weight: 700;
 }
 
@@ -182,11 +189,11 @@
 }
 
 .h-rtrn p{
-    font-size: 1.4vh;
-    font-weight: 600;
+    font-size: 1.7vh;
+    font-weight: 500;
 }
 .h-rtrn span{
-    font-size: 1.7vh;
+    font-size: 2vh;
     font-weight: 700;
 }
 .h-cart{
@@ -196,6 +203,7 @@
     height: 90%;
     width: 5vw;
     color: #FFFFFF;
+    margin-bottom: 2vh;
 }
 .h-cart:hover{
     border: 1.5px solid white;
@@ -267,7 +275,966 @@
 
 
 
+/* ------------------------------------------Carousel------------------------------------- */
+.main-wrapper{
+    padding: 0vh 2vh;
+    background-color: #E3E6E6;
+    height: 82.4vh;
+    z-index: -1;
+    position: absolute;
+}
+/* ---------------------------------------c-categories----------------------------------- */
+.c-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 3vh 3vh;
+    margin-top: 30vh;
+    position: relative;
+    z-index: 100;
+    height: auto;
+    background-image: linear-gradient( to bottom,
+    transparent 10% ,
+    #E3E6E6 23%
+    );
+}
+.c-categories1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.home-essentials{
+    gap: 1vh;
+    height: 55vh;
+    width: 24%;
+    background-color: white;
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.home-essentials h4{
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.h-e-products1{
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 2vh;
+}
+.h-ep1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.h-ep1 a{
+    height: 90%;
+    width:  100%;
+}
+.h-ep1 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.h-ep1 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.h-ep2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.h-ep2 a{
+    height: 90%;
+    width:  100%;
+}
+.h-ep2 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.h-ep2 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.h-e-products2{
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+}
+.h-ep3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.h-ep3 a{
+    height: 90%;
+    width:  100%;
+}
+.h-ep3 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.h-ep3 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.h-ep4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.h-ep4 a{
+    height: 90%;
+    width:  100%;
+}
+.h-ep4 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.h-ep4 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.home-essentials a{
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 1.8vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.home-essentials a:hover{
+    color: #294B67;
+}
+/* -------------------------------------GYG--------------------------------------- */
+.get-Ygame{
+    gap: 1vh;
+    height: 55vh;
+    width: 24%;
+    background-color: white;
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.get-Ygame h4{
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.gyg-product {
+    height: 41vh;
+    width: 100%;
+}
+.gyg-product a img{
+    height: 100%;
+    width: 100%;
+}
+.get-Ygame a{
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 1.8vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.get-Ygame a:hover{
+    color: #294B67;
 
+}
+
+/* -----------------------------------------g acessories--------------------------- */
+.g-accessories{
+    gap: 1vh;
+    height: 55vh;
+    width: 24%;
+    background-color: white;
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.g-accessories h4{
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.g-a-products1{
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 2vh;
+}
+.g-ap1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.g-ap1 a{
+    height: 90%;
+    width:  100%;
+}
+.g-ap1 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.g-ap1 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.g-ap2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.g-ap2 a{
+    height: 90%;
+    width:  100%;
+}
+.g-ap2 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.g-ap2 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.g-a-products2{
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+}
+.g-ap3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.g-ap3 a{
+    height: 90%;
+    width:  100%;
+}
+.g-ap3 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.g-ap3 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.g-ap4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.g-ap4 a{
+    height: 90%;
+    width:  100%;
+}
+.g-ap4 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.g-ap4 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.g-accessories a{
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 1.8vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.g-accessories a:hover{
+    color: #294B67;
+}
+/* ---------------------------------------------------------------- */
+.sd-fashion{
+    gap: 1vh;
+    height: 55vh;
+    width: 24%;
+    background-color: white;
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sd-fashion h4{
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.sd-products1{
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 2vh;
+}
+.sdp1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.sdp1 a{
+    height: 90%;
+    width:  100%;
+}
+.sdp1 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sdp1 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.sdp2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.sdp2 a{
+    height: 90%;
+    width:  100%;
+}
+.sdp2 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sdp2 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.sd-products2{
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+}
+.sdp3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.sdp3 a{
+    height: 90%;
+    width:  100%;
+}
+.sdp3 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sdp3 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.sdp4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.sdp4 a{
+    height: 90%;
+    width:  100%;
+}
+.sdp4 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sdp4 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.sd-fashion a{
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 1.8vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.sd-fashion a:hover{
+    color: #294B67;
+}
+/* -------------------------------------------c-categories 2--------------------------------- */
+.c-categories2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.k-arrivals{
+    gap: 1vh;
+    height: 55vh;
+    width: 24%;
+    background-color: white;
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.k-arrivals h4{
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.ka-products1{
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 2vh;
+}
+.kap1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.kap1 a{
+    height: 90%;
+    width:  100%;
+}
+.kap1 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kap1 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.kap2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.kap2 a{
+    height: 90%;
+    width:  100%;
+}
+.kap2 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kap2 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.ka-products2{
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+}
+.kap3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.kap3 a{
+    height: 90%;
+    width:  100%;
+}
+.kap3 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kap3 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.kap4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.kap4 a{
+    height: 90%;
+    width:  100%;
+}
+.kap4 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kap4 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.k-arrivals a{
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 1.8vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.k-arrivals a:hover{
+    color: #294B67;
+}
+.Kitchen-space{
+    gap: 1vh;
+    height: 55vh;
+    width: 24%;
+    background-color: white;
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Kitchen-space h4{
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.ks-products1{
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 2vh;
+}
+.ksp1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.ksp1 a{
+    height: 90%;
+    width:  100%;
+}
+.ksp1 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.ksp1 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.ksp2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.ksp2 a{
+    height: 90%;
+    width:  100%;
+}
+.ksp2 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.ksp2 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.ks-products2{
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+}
+.ksp3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.ksp3 a{
+    height: 90%;
+    width:  100%;
+}
+.ksp3 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.ksp3 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.ksp4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.ksp4 a{
+    height: 90%;
+    width:  100%;
+}
+.ksp4 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.ksp4 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.Kitchen-space a{
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 1.8vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.Kitchen-space a:hover{
+    color: #294B67;
+}
+.new-Ny{
+    gap: 1vh;
+    height: 55vh;
+    width: 24%;
+    background-color: white;
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.new-Ny h4{
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.nyn-product {
+    height: 41vh;
+    width: 100%;
+}
+.nyn-product a img{
+    height: 100%;
+    width: 100%;
+}
+.new-Ny a{
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 1.8vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.new-Ny a:hover{
+    color: #294B67;
+
+}
+.k-appliance{
+    gap: 1vh;
+    height: 55vh;
+    width: 24%;
+    background-color: white;
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.k-appliance h4{
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.k-products1{
+    display: flex;
+    gap: 2vh;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 2vh;
+}
+.kp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+.kp a{
+    height: 90%;
+    width:  100%;
+}
+.kp a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kp span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.k-products2{
+    margin-top: 2vh;
+    display: flex;
+    gap: 1vh;
+    width: 100%;
+    height: 18vh;
+}
+.kp3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 33%;
+}
+.kp3 a{
+    height: 90%;
+    width:  100%;
+}
+.kp3 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kp3 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.kp4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 33%;
+}
+.kp4 a{
+    height: 90%;
+    width:  100%;
+}
+.kp4 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kp4 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.kp5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 33%;
+}
+.kp5 a{
+    height: 90%;
+    width:  100%;
+}
+.kp5 a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kp5 span{
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-size: 1.6vh;
+    font-weight: 600;
+}
+.k-appliance a{
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 1.8vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.k-appliance a:hover{
+    color: #294B67;
+}
+/* -----------------------------------------------card slider1------------------------------------------------ */
+.card-slide-wrapper{
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    height: 40vh;
+    width: 100%;
+}
+.slider1-title{
+    align-items: center;
+    display: flex;
+    gap: 2vh;
+}
+.slider1-title h4{
+    color: black;
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.slider1-title a{
+    padding-bottom: 1vh;
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 2vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.slider1-title a:hover{
+    color: #294B67;
+    text-decoration: underline;
+}
+.card-slide-wrapper2{
+    padding: 1.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    height: 40vh;
+    width: 100%;
+}
+.slider2-title{
+    align-items: center;
+    display: flex;
+    gap: 2vh;
+}
+.slider2-title h4{
+    color: black;
+    font-size: 2.9vh;
+    font-weight: 600;
+}
+.slider2-title a{
+    padding-bottom: 1vh;
+    color: #1B6DA6;
+    font-weight: 500;
+    font-size: 2vh;
+    text-decoration: none;
+    word-spacing: .1vh;
+}
+.slider2-title a:hover{
+    color: #294B67;
+    text-decoration: underline;
+}
 /* --------------------------------footer------------------------------------ */
 .pre-footer{
     text-align: center;
@@ -296,7 +1263,7 @@
 .footer{
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 65%;
     height: 32vh;
 }
 .footerlinks{
@@ -305,7 +1272,7 @@
     flex-direction: column;
 }
 .footerlinks h6{
-    font-size: 1.8vh;
+    font-size: 2.5vh;
     font-weight: 600;
 }
 .f-links{
@@ -316,7 +1283,7 @@
 .f-links a{
     color: #DDDDD3;
     text-decoration: none;
-    font-size: 1.6vh;
+    font-size: 2vh;
 }
 .f-links a:hover{
     text-decoration: underline;
