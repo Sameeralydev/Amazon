@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/signin.css">
+    <link rel="icon" href="assets/favicon.jpg">
+    <title>Amazon Sign-In</title>
+</head>
+
+<body>
+    <!------------ it is the logo of the amazon ------------>
+    <header class="header">
+        <img src="assets/logo.png">
+    </header>
+    <!------------ it is the main container containing all other divs ------------>
+    <div class="main-container">
+        <!------------ this is for outlined box ------------->
+        <div class="wrapper">
+            <!---------- it is the heading of signin ----------->
+            <div class="row">
+                <div class="col">
+                    <h3 style="margin-bottom: 0;">
+                        Sign in
+                    </h3>
+                </div>
+
+            </div>
+            <!------------- it is the heading of email and phone number ----------->
+            <div class="row" style="margin-top: 1vw;">
+                <div class="col">
+                    <p class="email">
+                        Email or mobile phone number
+                    </p>
+                </div>
+            </div>
+            <!---------- it is the input field ------------>
+            <div class="row">
+                <div class="col">
+                    <input type="text"
+                        style="width: 100%; padding: 1vw 1vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.555); height: 5vh;">
+                </div>
+            </div>
+            <!----------- it is the button for continue -------------->
+            <div class="row" style="margin-top: 1vw;">
+                <div class="col">
+                    <a href="#"
+                        style="background: #FFD814; color: black; text-decoration: none; font-size: 1vw; border: transparent; border-radius: 50px; padding: .5vw 9.3vw;">Continue</a>
+                </div>
+            </div>
+            <!---------- it is the terms and policy etc ------------->
+            <div class="row" style="margin-top: 1.5vw;">
+                <div class="col">
+                    <p style="font-size: .9vw; color: black;">By continuing, you agree to Amazon's <a href="#"
+                            class="anchor">Conditions of Use</a>and <a href="#" class="anchor">Privacy Notice</a>.</p>
+                </div>
+            </div>
+            <!-------------- it is for forget password or any other help ------------->
+            <div class="row">
+                <div class="col">
+                    <button class="accordion"><img src="assets/open.JPG"> Need help?</button>
+                    <div class="panel">
+                        <a href="#">Forgot your password?</a> <br>
+                        <a href="#">Other issues with Sign-In</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <!----------- it is the heading of buying for work ------------>
+            <div class="row">
+                <div class="col">
+                    <h5 style="font-size: 1vw; font-weight: 700; margin-bottom: 0;">
+                        Buying for work?
+                    </h5>
+                </div>
+            </div>
+            <!----------- it is link for shop on amazon or business account ------------>
+            <div class="row" style="margin-top: .3vw;">
+                <div class="col" style="margin-top: 0;">
+                    <a href="#" class="business">Shop on Amazon Business</a>
+                </div>
+            </div>
+        </div>
+        <!---------- this is another div for create new account option ------------>
+        <div class="wrapper-outer">
+            <!-- it contains left hr tag etc-->
+            <div class="row">
+                <div class="col px-0 mx-0">
+                    <hr>
+                </div>
+                <div class="col px-0 mx-0 text-center">
+                    <p style="font-size: .8vw; color: rgba(0, 0, 0, 0.7); margin-bottom: 0; margin-top: .5vw;">New to Amazon?</p>
+                </div>
+                <div class="col px-0 mx-0">
+                    <hr>
+                </div>
+            </div>
+            <!---------- create your account button ----------->
+            <div class="row">
+                <div class="col px-0">
+                    <button type="button"
+                        style="background: transparent; border: 1px solid rgba(0, 0, 0, 0.555); border-radius: 50px; width: 100%; font-size: 1vw; padding: .3vw 1vw;">Create
+                        your Amazon account</button>
+                </div>
+            </div>
+        </div>
+        <!------------- it is the footer of this page --------------->
+        <div class="footer">
+            <div class="container text-center">
+                <div class="links text-center">
+                    <a href="#">Conditions of Use </a>
+                    <a href="#"> Privacy Notice </a>
+                    <a href="#">Help </a>
+                </div>
+                <div class="row px-0 mx-0 mt-2">
+                    <div class="col px-0 mx-0">
+                        <p style="font-size: .9vw; margin-left: -2vw; color: rgba(0, 0, 0, 0.7);">© 1996-2025,
+                            Amazon.com, Inc. or its affiliates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/signin.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</html>

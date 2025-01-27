@@ -1,0 +1,2591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assests/amazon-icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <script src="https://cdn.tailwindcss.com"></script> 
+   <link
+   href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+   rel="stylesheet"/>
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+ />
+   <link rel="stylesheet" href="style/bestseller.css"> 
+    <title>Amazon.com : best sellers</title>
+  </head>
+  <body>
+    <div class="h-wrapper">
+      <div class="h-logo-cntry">
+        <div class="h-logo">
+          <a href="#"><img src="Assests/logo.png"/></a>
+        </div>
+        <div class="h-cntry">
+          <div class="cntry-logo"><i class="bi bi-geo-alt"></i></div>
+          <div class="cntry-title">
+            <p>Deliever to</p>
+            <span>Pakistan</span>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------------------srch Bar--------------------------- -->
+      <div class="h-srch">
+        <select id="select">
+          <option value="All">All</option>
+          <option value="All Departments">All Departments</option>
+          <option value="Art & Craft">Art & Craft</option>
+          <option value="Auotomotive">Auotomotive</option>
+          <option value="Baby">Baby</option>
+          <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+          <option value="Books">Books</option>
+          <option value="Boys' Fashion">Boys' Fashion</option>
+          <option value="Computers">Computers</option>
+          <option value="Deals">Deals</option>
+          <option value="Digital Music">Digital Music</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Girls' Fashion">Girls' Fashion</option>
+          <option value="Health and Household">Health and Household</option>
+          <option value="Home & Kitchen">Home & Kitchen</option>
+          <option value="Industrial & Scientific">
+            Industrial & Scientific
+          </option>
+          <option value="Kindle Store">Kindle Store</option>
+          <option value="Luggage">Luggage</option>
+          <option value="Men's Fashion">Men's Fashion</option>
+          <option value="Movies & TV">Movies & TV</option>
+          <option value="Music, CDs & Vinyl">Music, CDs & Vinyl</option>
+          <option value="Pet Supplies">Pet Supplies</option>
+          <option value="Prime Video">Prime Video</option>
+          <option value="Software">Software</option>
+          <option value="Sports & Outdoor">Sports & Outdoor</option>
+          <option value="Tools & Home Improvement">
+            Tools & Home Improvement
+          </option>
+          <option value="Toys & Games">Toys & Games</option>
+          <option value="Video Games">Video Games</option>
+          <option value="Women's Fashion">Women's Fashion</option>
+        </select>
+        <input type="text" id="h-srch" placeholder="Search Amazon" />
+        <button><i class="bi bi-search"></i></button>
+      </div>
+      <div class="h-lang">
+        <div class="lang-icon">
+          <img src="https://flagsapi.com/US/flat/64.png" />
+        </div>
+        <div class="lang-slct"><span id="lang">EN</span></div>
+      </div>
+      <div class="h-acc-list">
+        <p>Hello, sign in</p>
+        <span>Account & Lists </span>
+      </div>
+      <div class="h-rtrn">
+        <p>Returns</p>
+        <span> & Orders</span>
+      </div>
+      <div class="h-cart"><i class="bi bi-cart3"></i><span>cart</span></div>
+    </div>
+
+    <!-- /* -----------------------------------------------Post Header------------------------------- */ -->
+    <div class="ph-wrapper">
+      <div class="ph-all"><i class="bi bi-list"></i><span>All</span></div>
+      <div class="ph-categories">
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+      </div>
+    </div>
+   <div class="flex bg-white text-black justify-between items-center drop-shadow-md max-sm:hidden">
+    <p class="para m-2">
+      1-48 of over 200,000 results for <span class="text-red-700"><b>"best sellers"</span>
+    </p>
+    <select title="links" name="featured " id="featured" class="bg-gray-100 mx-2 font-medium border-gray-950 text-xs py-1 hover:bg-gray-200 w-3/4 4 rounded-lg">
+        <option value="-1">Sort by: Featured</option>
+        <option value="1">Featured</option>
+        <option value="2">Price: Low to High</option>
+        <option value="3">Price: High to Low</option>
+        <option value="4">Avg. Customer Review</option>
+        <option value="5">Newest Arrivals</option>
+        <option value="6">Best Sellers</option>
+    </select>
+  </div> 
+  <!------------------------------------ buttons for responsive design------------------------------------------>
+  <div class="btn font-normal border place-content-around mt-5 md:hidden">
+    <button class="border p-2 rounded-md text-sm"><a href="">Products</a></button>
+    <button class="border p-2 rounded-md text-sm"><a href="#"></a>Supplies</button>
+    <button class="border p-2 rounded-md text-sm"><a href="#"></a>Home</button>
+    <button class="border p-2 rounded-md text-sm"><a href="#"></a>Bearded Dragon</button>
+    <button class="border p-2 rounded-md text-sm"><a href="#"></a>French</button>
+   </div>
+<!------------------------------------- Main Div ---------------------------------------------------------------->
+  <div class="overflow-hidden">
+    <!------------------------------------------------Left slide ---------------------------------------------------------->
+<div class="flex flex-row w-100">
+    <div class="grid-col-4 text-black font-normal text-xm mt-4 no-underline max-sm:hidden">
+        <ul class="mx-2">
+            <li><a href="#"><b>Popular Shopping Ideas</b></a></li>
+            <li><a href="#">York Time</a></li>
+            <li><a href="#">Crocs</a></li>
+            <li><a href="#">Sunless Tanning Lotion</a></li>
+            <li><a href="#">Small Hand Mixer</a></li></ul>
+            <span id="dots" class="mx-1"></span><span id="more" class="hidden">
+           <ul class="mx-2">
+            <li><a href="#">Clothes Steamer Handheld</a></li>
+            <li><a href="#">Kettle</a></li>
+            <li><a href="#">Heated Eyelash Curler</a></li>
+            <li><a href="#">Magnetic Phone Mount</a></li>
+            <li><a href="#">Propolis</a></li>
+            <li><a href="#">Adjustable Laptop Stand</a></li>
+            <li><a href="#">Battery Operated Pencil Sharpener</a></li>
+            <li><a href="#">Vitamins B12</a></li></ul>
+          </span><button onclick="myFunction()" id="myBtn" class="text-blue-900">See more</button>
+        <hr class="ms-2 mt-3">
+        <ul class="mx-2 mt-2">
+          <li><a href="#"><b>Customer Reviews</b></a></li>
+        </ul>
+        <span class="mx-2 mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-regular fa-star text-orange-400"></span>
+        <span class="text-xs">& Up</span>
+      </span>
+      <ul class="mx-2 mt-2">
+        <li><a href="#"><b>Department</b></a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Literature & Fiction</a></li>
+        <li><a href="#">Kitchen & Dining</a></li>
+        <li><a href="#">Clothing, Shoes & Jewelry</a></li>
+      </ul>
+      <ul class="mx-2">
+        <li><a href="#"><b>Deals & Discounts</b></a></li>
+        <li><a href="#">All Discounts</a></li>
+        <li><a href="#">Today's Deals</a></li>
+      </ul>
+      <ul class="mx-2">
+        <li><a href="#"><b>Book Format</b></a></li>
+        <li><a href="#">Paperback</a></li>
+        <li><a href="#">Hardcover</a></li>
+        <li><a href="#">Kindle Edition</a></li>
+        <li><a href="#">Large Print</a></li>
+        <li><a href="#">Audible Audiobook</a></li>
+        <li><a href="#">Audio CD</a></li>
+        <li><a href="#">Board Book</a></li>
+        <li><a href="#">Spiral-bound</a></li>
+      </ul>
+      <ul class="mx-2">
+        <li><a href="#"><b>New Releases</b></a></li>
+        <li><a href="#">Last 30 days</a></li>
+        <li><a href="#">Last 90 days</a></li>
+        <li><a href="#">Coming Soon</a></li>
+      </ul>
+      <ul class="mx-2">
+        <li><a href="#"><b>Book Language</b></a></li>
+        <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300 hover:text-blue-600"></i> English</a></li>
+        <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> German</a></li>
+        <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> French</a></li>
+        <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Spanish</a></li>
+        <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Italian</a></li>
+        <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Russian</a></li>
+        <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Chinese (Simplified)</a></li></ul>
+        <span id="dots" class="mx-1"></span><span id="more" class="hidden">
+          <ul class="mx-2">
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Arabic</a></li>
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Danish</a></li>
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Dutch</a></li>
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Hindi</a></li>
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Japanese</a></li>
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Polish</a></li>
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Portuguese</a></li>
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Swahili</a></li>
+            <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Turkish</a></li></ul>
+            </span><button onclick="myFunction()" id="myBtn" class="text-blue-900">See more</button>
+            <ul class="mx-2">
+              <li><a href="#"><b>Condition</b></a></li>  hover:text-blue-600
+              <li><a href="#">Collectible</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Used</a></li>
+            </ul>
+            <ul class="mx-2">
+              <li><a href="#"><b>Book Award Winners</b></a></li>
+              <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Booker Prize</a></li>
+              <li><a href="#" class="hover:text-orange-400" ><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Hugo & Nebula Awards</a></li>
+              <li><a href="#" class="hover:text-orange-400" ><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> National Book Award</a></li>
+              <li><a href="#" class="hover:text-orange-400" ><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Newbery Medal</a></li>
+              <li><a href="#" class="hover:text-orange-400" ><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Pulitzer Prize</a></li></ul>
+              <ul class="mx-2">
+                <li><a href="#"><b>Kindle Unlimited</b></a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Kindle Unlimited Eligible</a></li>
+              </ul>
+              <ul class="mx-2">
+                <li><a href="#"><b>Author</b></a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Ariel Lawhon</a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Kristin Hannah</a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Chris Whitaker</a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Nicholas Sparks</a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Micah Sparks</a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> John Boyne</a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Matt Haig</a></li></ul>
+                <span id="dots" class="mx-1"></span><span id="more" class="hidden">
+               <ul class="mx-2">
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Liz Moore</a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> Martin Chatterton</a></li></ul>
+              </span><button onclick="myFunction()" id="myBtn" class="text-blue-900">See more</button>
+              <ul class="mx-2">
+                <li><a href="#"><b>Book Series</b></a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> A Novel</a></li>
+                <li><a href="#" class="hover:text-orange-400"><i class="fa-regular fa-square fa-lg text-gray-300  hover:text-blue-600"></i> The Berlin Girl Trilogy</a></li>
+              </ul>
+    </div>
+        <!--------------------------------------------Right slider header ------------------------------------------------>
+   <div class="grid-col-8 mx-5 mt-4">
+    <h2>RESULTS</h2>
+    <p class="text-sm font-normal">Check each product page for other buying options. Price and other details may vary based on product size and color.</p>
+    <!--------------------------------------- first row div  ------------------------------------------------------->
+    <div class=" flex flex-row space-x-2 -me-12">
+      <!----------------------------------------------- first row img1 --------------------------------------------->
+      <div class="mt-3">
+        <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+          <div class="trap px-2">
+            <span>Best Seller</span></div>
+          <img src="Assests/slider-1/img-1.webp" alt="vegetable chopper">
+        </div>
+        <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+        <span class="font-medium hover:text-orange-600">Nelko Label Maker Machine with Tape, P21 Bluetooth Label Printer, Wireless Mini Label Makers with Multiple Templates for Organizing Office Home, White.</span>
+        <div>
+          <span class="mt-1">
+            <span class="fa fa-star checked text-orange-400"></span>
+            <span class="fa fa-star checked text-orange-400"></span>
+            <span class="fa fa-star checked text-orange-400"></span>
+            <span class="fa fa-star checked text-orange-400"></span>
+            <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+            <span class="fa-solid fa-angle-down -ms-1"></span>
+            <span class="font-normal text-blue-800 hover:text-blue-950">8,399</span>
+        </div>
+        <div>
+          <span class="font-normal">40K+ bought in past month</span>
+        </div>
+        <div class="mt-2"> 
+          <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">19</span><sup class="font-normal">98</sup></span>
+          <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$59.95</del></div>
+        </div>
+        <div>
+          <span class=" bg-green-400 inline-block px-1">Save $4.00</span>
+          <span class="font-medium text-xs"> with coupon</span>
+        </div>
+        <div class="mt-1">
+          <span class="font-normal">Delivery </span>
+          <span class="text-bold">Tue, Jan 14 </span>
+        </div>
+        <div>
+          <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+        </div>
+        <div class="flex flex-row mt-2">
+          <img src="Assests/slider-1/end logo.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+          <span class="font-medium">1 sustainability feature</span>
+          <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+        </div>
+      </div>
+            <!----------------------------------------------- first row img2 --------------------------------------------->
+        <div class="mt-3">
+          <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+            <div class="trap px-2">
+              <span>Best Seller</span></div>
+            <img src="Assests/slider-1/img-2.webp" alt="vegetable chopper">
+          </div>
+          <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+          <span class="font-medium hover:text-orange-600">Mueller Pro-Series 10-in-1, 8 Blade Vegetable Chopper, Onion Mincer, Cutter, Dicer, Egg Slicer with Container, French Fry Cutter Potatoe Slicer, Home Essentials &amp; Kitchen Gadgets, Salad Chopper</span>
+          <div>
+            <span class="mt-1">
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+              <span class="fa-solid fa-angle-down -ms-1"></span>
+              <span class="font-normal text-blue-800 hover:text-blue-950">32,136</span>
+          </div>
+          <div>
+            <span class="font-normal">30K+ bought in past month</span>
+          </div>
+          <div class="mt-2">
+            <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">29</span><sup class="font-normal">97</sup></span>
+            <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$59.95</del></div>
+          </div>
+          <div>
+            <span class=" bg-green-400 inline-block px-1">Save $5.00</span>
+            <span class="font-medium text-xs"> with coupon</span>
+          </div>
+          <div class="mt-1">
+            <span class="font-normal">Delivery </span>
+            <span class="text-bold">Tue, Jan 14 </span>
+          </div>
+          <div>
+            <span class="text-sm font-normal">Ships to Pakistan</span>
+          </div>
+          <div>
+            <span class="font-normal">More Buying Choices</span>
+          </div>
+          <div>
+            <span class="a-color-base font-medium">$25.49</span>
+            <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(6+ used & new offers)</a>
+          </div>
+          </div>
+        </div>
+              <!----------------------------------------------- first row img3 --------------------------------------------->
+              <div class="mt-3">
+                <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+                  <div class="trap px-2">
+                    <span>Best Seller</span></div>
+                  <img src="Assests/slider-1/img-3.webp" alt="vegetable chopper"class="mt-2 px-10"></div>
+                <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+                <span class="font-medium hover:text-orange-600">The Frozen River: A GMA Book Club Pick: A Novel</span>
+                <p>by <a href="#" class="text-blue-700 font-normal">Ariel Lawhon</a></p>
+                <div>
+                  <span class="mt-1">
+                    <span class="fa fa-star checked text-orange-400"></span>
+                    <span class="fa fa-star checked text-orange-400"></span>
+                    <span class="fa fa-star checked text-orange-400"></span>
+                    <span class="fa fa-star checked text-orange-400"></span>
+                    <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                    <span class="fa-solid fa-angle-down -ms-1"></span>
+                    <span class="font-normal text-blue-800 hover:text-blue-950">41,548</span>
+                </div>
+                <div>
+                  <span class="font-medium text-blue-800">Paperback</span>
+                </div>
+                <div class="mt-2">
+                  <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">13</span><sup class="font-normal">61</sup></span>
+                  <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$18.00</del></div>
+                </div>
+                <div class="mt-1">
+                  <span class="font-normal">Delivery </span>
+                  <span class="text-bold">Thu, Jan 16 </span>
+                </div>
+                <div>
+                  <span class="text-sm font-normal">Ships to Pakistan</span>
+                </div>
+                <div>
+                  <span class="font-normal">Other formats:</span>
+                  <span><a href="#" class="text-blue-800 font-medium text-[.95vw] hover:text-blue-950"> Audible Audiobook, Kindle, Hardcover, Audio CD</a></span>
+                </div>
+                </div>
+              </div>
+    <!-------------------------------------------------------first row img4  ------------------------------------------------------->
+    <div class="mt-3">
+      <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+        <div class="trap px-2">
+          <span>Best Seller</span></div>
+        <img src="Assests/slider-1/img-4.webp" alt="vegetable chopper">
+      </div>
+      <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+      <span class="font-medium hover:text-orange-600">DONAMA Cervical Pillow for Neck and Shoulder,Contour Memory Foam Pillow,Ergonomic Neck Support Pillow for Side Back Stomach Sleepers with Pillowcase</span>
+      <div>
+        <span>Options: <a href="#" class="font-normal text-xs text-blue-800">3 sizes</a> </span>
+      </div>
+      <div>
+        <span class="mt-1">
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+          <span class="fa-solid fa-angle-down -ms-1"></span>
+          <span class="font-normal text-blue-800 hover:text-blue-950">14,507</span>
+      </div>
+      <div>
+        <span class="font-normal">30K+ bought in past month</span>
+      </div>
+      <div class="mt-2"> 
+        <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">36</span><sup class="font-normal">09</sup></span>
+        <div class="inline-block"><span class="font-normal">List Price: </span><del class="font-thin text-sm">$69.99</del></div>
+      </div>
+      <div>
+        <span class=" bg-green-400 inline-block px-1">Save $4.00</span>
+        <span class="font-medium text-xs"> with coupon</span>
+      </div>
+      <div class="mt-1">
+        <span class="font-normal">Delivery </span>
+        <span class="text-bold">Tue, Jan 14 </span>
+      </div>
+      <div>
+        <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+      </div>
+      <div class="flex flex-row mt-2">
+        <img src="Assests/slider-1/end logo.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+        <span class="font-medium">1 sustainability feature</span>
+        <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+      </div>
+    </div>
+    <!--------------------------------------------------- first row img5  ------------------------------------------------------->
+    <div class="mt-3">
+      <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+        <div class="trap px-1">
+          <span>Editor's pick</span></div>
+        <img src="Assests/slider-1/img-5.webp" class="mt-2 px-10"></div>
+      <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+      <span class="font-medium hover:text-orange-600">All the Colors of the Dark: A Read with Jenna Pick</span>
+      <p>by <a href="#" class="text-blue-700 font-normal"> Chris Whitaker</a></p>
+      <div>
+        <span class="mt-1">
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+          <span class="fa-solid fa-angle-down -ms-1"></span>
+          <span class="font-normal text-blue-800 hover:text-blue-950">41,548</span>
+      </div>
+      <div>
+        <span class="font-medium text-blue-800">Hardcover</span>
+      </div>
+      <div class="mt-2">
+        <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">14</span><sup class="font-normal">03</sup></span>
+        <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$18.00</del></div>
+      </div>
+      <div class="mt-1">
+        <span class="font-normal">Delivery </span>
+        <span class="text-bold">Thu, Jan 16 </span>
+      </div>
+      <div>
+        <span class="text-sm font-normal">Ships to Pakistan</span>
+      </div>
+      <div>
+        <span class="font-normal">More Buying Choices</span>
+      </div>
+      <div>
+        <span class="a-color-base font-medium">$25.49</span>
+        <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(30+ used & new offers)</a>
+      </div>
+      <div>
+        <span class="font-normal">Other formats:</span>
+        <span><a href="#" class="text-blue-800 font-medium text-[.95vw] hover:text-blue-950">Kindle, Audible Audiobook, Paperback</a></span>
+      </div>
+      </div>
+    </div>
+  </div>
+   <!---------------------------------------- 2nd row div ----------------------------------------------------------->
+  <div class=" flex flex-row space-x-2 -me-12">
+    <!----------------------------------------------- 2nd row img1 --------------------------------------------->
+    <div class="mt-3">
+      <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+        <div class="trap px-2">
+          <span>Best Seller</span></div>
+        <img src="Assests/slider-2/img-2.webp"class="mt-3 px-6">
+      </div>
+      <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+      <span class="font-medium hover:text-orange-600">Crest 3D Whitestrips Professional Effects, Whitestrip 3D White, Teeth Whitening Strip Kit, 44 Strips (22 Count Pack), Crest Teeth Whitening Strips, Teeth Whitening Kit</span>
+      <div>
+        <div>
+          <span class="bg-gray-200 text-sm font-medium py-1 px-2">Strip</span><span class="bg-gray-200 text-sm font-medium py-1 px-2 mx-1">44 Count(Pac of 1)</span>
+        </div>
+        <div>
+          <span class="text-sm">#1 Top Rated</span>
+        </div>
+        <span class="mt-1">
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa fa-star checked text-orange-400"></span>
+          <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+          <span class="fa-solid fa-angle-down -ms-1"></span>
+          <span class="font-normal text-blue-800 hover:text-blue-950">91,698</span>
+      </div>
+      <div>
+        <span class="font-normal">100K+ bought in past month</span>
+      </div>
+      <div class="mt-2">
+        <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">29</span><sup class="font-normal">99</sup></span>
+        <div class="inline-block"><span class="font-normal">($0.68/Count) List:</span><del class="font-normal text-sm"> $45.99</del></div>
+      </div>
+      <div class="mt-1">
+        <span class="font-normal">Delivery </span>
+        <span class="text-bold">Tue, Jan 14 </span>
+      </div>
+      <div>
+        <span class="text-sm font-normal">Ships to Pakistan</span>
+      </div>
+      <div>
+        <span class="font-normal">More Buying Choices</span>
+      </div>
+      <div>
+        <span class="a-color-base font-medium">$29.69</span>
+        <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(2+ used & new offers)</a>
+      </div>
+      </div>
+    </div>
+          <!----------------------------------------------- 2nd row img2 --------------------------------------------->
+          <div class="mt-3">
+            <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+              <div class="trap px-2">
+                <span>Best Seller</span></div>
+              <img src="Assests/slider-2/img-3.webp" alt="vegetable chopper"class="mt-4 px-8"></div>
+            <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+            <span class="font-medium hover:text-orange-600">INIU Portable Charger, Slimmest 10000mAh 5V/3A Power Bank, USB C in&amp;out High-Speed Charging Battery Pack, External Phone Powerbank Compatible with iPhone 16 15 14 13 12 Samsung S22 S21 Google iPad etc</span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">69,453</span>
+            </div>
+            <div>
+              <span class="font-normal">10K+ bought in past month</span>
+            </div>
+            <div class="flex flex-row mt-2">
+              <img src="Assests/slider-1/end logo.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+              <span class="font-medium">1 sustainability feature</span>
+              <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+              <div>
+                <span class="font-normal">No featured offers available</span>
+              </div>
+              <div>
+                <span class="a-color-base font-medium">$14.58</span>
+                <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(11 used & new offers)</a>
+              </div>
+            </div>
+          </div>
+            <!----------------------------------------------- 2nd row img3 --------------------------------------------->
+            <div class="mt-3">
+              <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+                <div class="trap px-1">
+                  <span>Editor's pick</span></div>
+                <img src="Assests/slider-2/img-1.webp" class="mt-2 px-10"></div>
+              <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+              <span class="font-medium hover:text-orange-600">The God of the Woods: A Novel</span>
+              <p class="font-normal">by<a href="#" class="text-blue-700 font-normal">Liz Moore</a></p>
+              <div>
+                <span class="mt-1">
+                  <span class="fa fa-star checked text-orange-400"></span>
+                  <span class="fa fa-star checked text-orange-400"></span>
+                  <span class="fa fa-star checked text-orange-400"></span>
+                  <span class="fa fa-star checked text-orange-400"></span>
+                  <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                  <span class="fa-solid fa-angle-down -ms-1"></span>
+                  <span class="font-normal text-blue-800 hover:text-blue-950">38,248</span>
+              </div>
+              <div>
+                <span class="font-medium text-blue-800">Hardcover</span>
+              </div>
+              <div class="mt-2">
+                <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">17</span><sup class="font-normal">00</sup></span>
+                <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$30.00</del></div>
+              </div>
+              <div class="mt-1">
+                <span class="font-normal">Delivery </span>
+                <span class="text-bold">Fri, Jan 17</span>
+              </div>
+              <div>
+                <span class="text-sm font-normal">Ships to Pakistan</span>
+              </div>
+              <div>
+                <span class="font-normal">More Buying Choices</span>
+              </div>
+              <div>
+                <span class="a-color-base font-medium">$14.96</span>
+                <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(22+ used & new offers)</a>
+              </div>
+              <div>
+                <span class="font-normal">Other formats:</span>
+                <span><a href="#" class="text-blue-800 font-medium text-[.95vw] hover:text-blue-950">Kindle, Audible Audiobook, Paperback</a></span>
+              </div>
+              </div>
+            </div>
+  <!-------------------------------------------------------2nd row img4  ------------------------------------------------------->
+  <div class="mt-3">
+    <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+      <div class="trap px-2">
+        <span>Best Seller</span></div>
+      <img src="Assests/slider-2/img-4.webp"class="mt-2">
+    </div>
+    <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+    <span class="font-medium hover:text-orange-600">4 Pack Magnetic Spice Storage Rack Organizer for Refrigerator and Oven, Black Fridge Organizers and Storage</span>
+    <div>
+      <span class="mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-solid fa-angle-down -ms-1"></span>
+        <span class="font-normal text-blue-800 hover:text-blue-950">6,262</span>
+    </div>
+    <div>
+      <span class="font-normal">20K+ bought in past month</span>
+    </div>
+    <div class="mt-2"> 
+      <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">19</span><sup class="font-normal">99</sup></span>
+      <div class="inline-block"><span class="font-normal">($5.00/Count) List: </span><del class="font-thin text-sm">$24.99</del></div>
+    </div>
+    <div class="mt-1">
+      <span class="font-normal">Delivery </span>
+      <span class="text-bold">Tue, Jan 14 </span>
+    </div>
+    <div>
+      <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+    </div>
+    <div class="flex flex-row mt-2">
+      <img src="Assests/slider-2/end log.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+      <span class="font-medium">Small Business</span>
+      <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+    </div>
+  </div>
+  <!---------------------------------------------------first row img5  ------------------------------------------------------->
+  <div class="mt-3">
+    <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+      <div class="trap px-1">
+        <span>Editor's pick</span></div>
+      <img src="Assests/slider-2/img-5.webp"class="mt-2 px-10"></div>
+    <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+    <span class="font-medium hover:text-orange-600">Cold Press Juicer, 5.4" Wide Feed Chute Juice Extractor Machine with 400W, High Juice Yield, Slow Masticating Juicer for Whole Vegetables &amp; Fruits</span>
+    <div>
+      <span class="mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+        <span class="fa-solid fa-angle-down -ms-1"></span>
+        <span class="font-normal text-blue-800 hover:text-blue-950">749</span>
+    </div>
+    <div>
+      <span class="font-normal">10k+ bought in past month</span>
+    </div>
+    <div class="mt-2">
+      <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">99</span><sup class="font-normal">99</sup></span>
+    </div>
+    <div class="mt-1">
+      <span class="font-normal">Delivery </span>
+      <span class="text-bold">Thu, Jan 16 </span>
+     </div> 
+    <div>
+      <span class="text-sm font-normal">Ships to Pakistan</span>
+    </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------ 3rd row div ------------------------------------------------------------>
+<div class=" flex flex-row space-x-2 -me-12">
+  <!----------------------------------------------- 3rd row img1 --------------------------------------------->
+  <div class="mt-3">
+    <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+      <div class="trap px-2">
+        <span>Best Seller</span></div>
+      <img src="Assests/slider-3/img-1.webp" alt="book"class="mt-3 px-16">
+    </div>
+    <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+    <span class="font-medium hover:text-orange-600">Stanley Quencher H2.0 FlowState Stainless Steel Vacuum Insulated Tumbler with Lid and Straw for Water, Iced Tea or Coffee</span>
+    <div>
+      <span class="mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+        <span class="fa-solid fa-angle-down -ms-1"></span>
+        <span class="font-normal text-blue-800 hover:text-blue-950">44,686</span>
+    </div>
+    <div>
+      <span class="font-medium">10K+ bought in past month</span>
+    </div>
+    <div> 
+      <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">35</span><sup class="font-normal">00</sup></span>
+    </div>
+    <div class="mt-1">
+      <span class="font-normal">Delivery </span>
+      <span class="text-bold">Wed, Jan 15 </span>
+    </div>
+    <div>
+      <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+    </div>
+    <div>
+      <span class="font-normal">More Buying Choices</span>
+    </div>
+    <div>
+      <span class="a-color-base font-medium">$32.07</span>
+      <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(4+ used & new offers)</a>
+    </div>
+    </div>
+  </div>
+        <!----------------------------------------------- 3rd row img2 --------------------------------------------->
+        <div class="mt-3">
+          <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+            <div class="trap px-2">
+              <span>Best Seller</span></div>
+            <img src="Assests/slider-3/img-2.webp" alt="book"class="mt-1 px-8">
+          </div>
+          <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+          <span class="font-medium hover:text-orange-600">Make Your Bed: Little Things That Can Change Your Life...And Maybe the World</span>
+          <span>by <a href="#" class="font-normal text-blue-800"> Admiral William H. McRaven</a></span>
+          <div>
+            <span class="mt-1">
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+              <span class="fa-solid fa-angle-down -ms-1"></span>
+              <span class="font-normal text-blue-800 hover:text-blue-950">46,949</span>
+          </div>
+          <div>
+            <span class="font-medium text-blue-800"><a href="#">Hardcover</a></span>
+          </div>
+          <div> 
+            <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">7</span><sup class="font-normal">37</sup></span>
+            <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$20.00</del></div>
+          </div>
+          <div class="mt-1">
+            <span class="font-normal">Delivery </span>
+            <span class="text-bold">Fri, Jan 17 </span>
+          </div>
+          <div>
+            <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+          </div>
+          <div>
+            <span class="font-normal">More Buying Choices</span>
+          </div>
+          <div>
+            <span class="a-color-base font-medium">$29.69</span>
+            <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(2+ used & new offers)</a>
+          </div>
+           <div>
+            <span class="font-normal">More Buying Choices</span>
+          </div>
+          <div>
+            <span class="a-color-base font-medium">$25.49</span>
+            <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(30+ used & new offers)</a>
+          </div>
+          <div class="mt-2">
+            <span class="font-normal">Other formats:</span>
+            <span><a href="#" class="text-blue-800 font-medium text-[.95vw] hover:text-blue-950">Kindle, Audible Audiobook, Paperback</a></span>
+          </div>
+          </div>
+        </div>
+          <!----------------------------------------------- 3rd row img3 --------------------------------------------->
+          <div class="mt-3">
+            <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+              <div class="trap px-2">
+                <span>Best Seller</span></div>
+              <img src="Assests/slider-3/img-3.webp" alt="vegetable chopper"class="mt-4 px-8"></div>
+            <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+            <span class="font-medium hover:text-orange-600">COSLUS Water Dental Flosser Teeth Pick: Portable Cordless Oral Irrigator 300ML Rechargeable Travel Irrigation Cleaner IPX7 Waterproof Electric Flossing Machine for Teeth Cleaning C20(F5020E)</span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">29,351</span>
+            </div>
+            <div>
+              <span class="font-normal">50K+ bought in past month</span>
+            </div>
+            <div> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">29</span><sup class="font-normal">98</sup></span>
+              <span class="font-normal">($29.98/Count)</span>
+            </div>
+              <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$39.99</del></div>
+            <div class="mt-1">
+              <span class="font-normal">Delivery </span>
+              <span class="text-bold">Wed, Jan 15</span>
+            </div>
+            <div>
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+            </div>
+          </div>
+<!-------------------------------------------------------3rd row img4  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <div class="trap px-2">
+      <span>Best Seller</span></div>
+    <img src="Assests/slider-3/img-4.webp"class="px-8">
+  </div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">Phomemo D30 Label Maker Machine, Portable Bluetooth Mini Label Printer, Smart Phone Handheld Thermal Sticker Small Labeler Multiple Templates Font Icon Inkless for Home Office</span>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">22,614</span>
+  </div>
+  <div>
+    <span class="font-normal">20K+ bought in past month</span>
+  </div>
+  <div class="mt-2"> 
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">19</span><sup class="font-normal">99</sup></span>
+    <div class="inline-block"><span class="font-normal">List Price: </span><del class="font-thin text-sm">$39.99</del></div>
+  </div>
+  <div>
+    <span class=" bg-green-400 inline-block px-1">Save $4.00</span>
+    <span class="font-medium text-xs"> with coupon</span>
+  </div>
+  <div class="mt-1">
+    <span class="font-normal">Delivery </span>
+    <span class="text-bold">Wed, Jan 15</span>
+  </div>
+  <div>
+    <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+  </div>
+  <div class="flex flex-row mt-2">
+    <img src="Assests/slider-1/end logo.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+    <span class="font-medium">1 sustainability feature</span>
+    <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+  </div>
+</div>
+<!---------------------------------------------------3rd row img5  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <div class="trap px-1">
+      <span>Editor's pick</span></div>
+    <img src="Assests/slider-3/img-5.webp"class="mt-2 px-10"></div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">Grande Cosmetics GrandeLASH-MD Lash Enhancing Serum</span>
+  <div>
+    <div>
+      <span class="bg-gray-200 font-normal">1 Count (Pack of 1)</span>
+    </div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-regular fa-star text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">52,647</span>
+  </div>
+  <div>
+    <span class="font-normal">30k+ bought in past month</span>
+  </div>
+  <div class="mt-2">
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">36</span><sup class="font-normal">00</sup></span>
+    <span class="font-normal text-sm">($36.00/Count)</span>
+  </div>
+  <div class="mt-1">
+    <span class="font-normal">Delivery </span>
+    <span class="text-bold">Wed, Jan 15 </span>
+   </div> 
+  <div>
+    <span class="text-sm font-normal">Ships to Pakistan</span>
+  </div>
+  </div>
+</div>
+</div>
+<!------------------------------------------- 4th row div  --------------------------------------------------------->
+<div class=" flex flex-row space-x-2 -me-12">
+  <!----------------------------------------------- 4th row img1 --------------------------------------------->
+  <div class="mt-3">
+    <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+      <img src="Assests/slider-4/img-1.webp" alt="book"class=" pt-4 px-10">
+    </div>
+    <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+    <span class="font-medium hover:text-orange-600">Eruption: Instant #1 New York Times Bestseller</span>
+    <div>
+      <div>
+        <span>by <a href="#" class="font-normal text-blue-800"> Michael Crichton and James Patterson</a></span>
+      </div>
+      <span class="mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-regular fa-star text-orange-400"></span>
+        <span class="fa-solid fa-angle-down -ms-1"></span>
+        <span class="font-normal text-blue-800 hover:text-blue-950">26,258</span>
+    </div>
+    <div>
+      <span><a href="#"class="font-medium text-blue-800 ">Hardcover</a></span>
+    </div>
+    <div>
+      <span class="font-medium">10K+ bought in past month</span>
+    </div>
+    <div> 
+      <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">16</span><sup class="font-normal">33</sup></span>
+      <span class="font-normal text-sm" >List:<del> $32.00</del> </span>
+    </div>
+    <div class="mt-1">
+      <span class="font-normal">$14.98 delivery </span>
+    </div>
+    <div>
+      <span class="text-xs font-normal mt-1">Ships to Pakistan</span>
+    </div>
+    <div>
+      <span class="font-normal">More Buying Choices</span>
+    </div>
+    <div>
+      <span class="a-color-base font-medium">$2.46</span>
+      <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(70+ used & new offers)</a>
+    </div>
+    <div>
+      <span class="font-normal">Other formats: <a href="#" class="font-normal text-blue-800 text-sm">Audible Audiobook, Kindle, Paperback, Audio CD</a></span>
+    </div>
+    </div>
+  </div>
+        <!----------------------------------------------- 4th row img2 --------------------------------------------->
+        <div class="mt-3">
+          <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+            <div class="trap px-2">
+              <span>Best Seller</span></div>
+            <img src="Assests/slider-4/img-2.webp"class="pt-16">
+          </div>
+          <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+          <span class="font-medium hover:text-orange-600">Bedsure Satin Pillowcase for Hair and Skin Queen - Silver Grey Silky Pillowcase 20x30 Inches - Set of 2 with Envelope Closure, Similar to Silk Pillow Cases, Gifts for Women Men</span>
+          <div>
+            <div>
+              <span class="font-normal text-xs">Options: <a href="#" class="font-normal text-xs text-blue-800">5 sizes</a></span>
+            </div>
+            <span class="mt-1">
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+              <span class="fa-solid fa-angle-down -ms-1"></span>
+              <span class="font-normal text-blue-800 hover:text-blue-950">296,511</span>
+          </div>
+          <div>
+            <span class="font-normal text-sm">30k+ bought in past month</span>
+          </div>
+          <div> 
+            <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">6</span><sup class="font-normal">99</sup></span>
+            <span class="font-normal">($3.50/Count)</span>
+            <span class="font-normal">List: </span><del class="font-thin text-sm">$20.00</del>
+          </div>
+          <div class="mt-1">
+            <span class="font-normal">Delivery </span>
+            <span class="text-bold">Wed, Jan 15 </span>
+          </div>
+          <div>
+            <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+          </div>
+          <div class="flex flex-row mt-2">
+            <img src="Assests/slider-1/end logo.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+            <span class="font-medium">1 sustainability feature</span>
+            <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+          </div>
+        </div>
+          <!----------------------------------------------- 4th row img3 --------------------------------------------->
+          <div class="mt-3">
+            <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+              <div class="trap px-2">
+                <span>Editor,s pick</span></div>
+              <img src="Assests/slider-4/img-3.webp"class="mt-4 px-11"></div>
+            <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+            <span class="font-medium hover:text-orange-600">The Women: A Novel</span>
+            <div>
+              <div>
+                <span>by<a href="#" class="font-normal text-blue-800"> Kristin Hannah</a></span>
+              </div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">219,244</span>
+            </div>
+            <div>
+              <span><a href="#"class="font-medium text-blue-800 ">Hardcover</a></span>
+            </div>
+            <div> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">14</span><sup class="font-normal">00</sup></span>
+            </div>
+              <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$30.00</del></div>
+            <div class="mt-1">
+              <span class="font-normal">Delivery </span>
+              <span class="text-bold">Fri, Jan 17</span>
+            </div>
+            <div>
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+            <div>
+              <span class="font-normal">More Buying Choices</span>
+            </div>
+            <div>
+              <span class="a-color-base font-medium">$10.16</span>
+              <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(48 + used & new offers)</a>
+            </div>
+            <div>
+              <span class="font-normal">Other formats: <a href="#" class="font-normal text-blue-800 text-sm">Audible Audiobook, Kindle, Paperback, Audio CD</a></span>
+            </div>
+            </div>
+          </div>
+<!-------------------------------------------------------4th row img4  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <img src="Assests/slider-4/img-4.webp"class="pt-5 px-9">
+  </div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">Best Seller</span>
+  <div><span class="font-normal txet-sm">1987</span></div>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star fa-star-half-stroke text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">592</span>
+  </div>
+  <div>
+    <span class="font-medium text-blue-800 text-sm">Prime Video</span>
+  </div>
+  <div>
+    <span class="text-sm font-normal mt-1">$0.00 with a MGM+ subscription trial</span>
+  </div>
+  </div>
+</div>
+<!---------------------------------------------------4th row img5  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <div class="trap px-1">
+      <span>Best Seller</span></div>
+    <img src="Assests/slider-4/img-5.webp"class="mt-2 px-10"></div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">Clean Skin Club Clean Towels XL™, 100% USDA Biobased Face Towel, Disposable Face Towelette, Makeup Remover Dry Wipes, Ultra Soft, 50 Ct, 1 Pack</span>
+  <div>
+    <div>
+      <span class="bg-gray-200 font-medium px-1 py-1">Towel</span>
+      <span class="bg-gray-200 font-medium space-x-1 px-1 py-1">50 Count (Pack of 1)</span>
+    </div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-regular fa-star text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">29,677</span>
+  </div>
+  <div>
+    <span class="font-normal">1000k+ bought in past month</span>
+  </div>
+  <div class="mt-2">
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">17</span><sup class="font-normal">95</sup></span>
+    <span class="font-normal text-sm">($0.36/Count)</span>
+  </div>
+  <div class="mt-1">
+    <span class="font-normal">Delivery </span>
+    <span class="text-bold">Wed, Jan 15 </span>
+   </div> 
+  <div>
+    <span class="text-sm font-normal">Ships to Pakistan</span>
+  </div>
+  <div class="flex flex-row mt-2">
+    <img src="Assests/slider-1/end logo.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+    <span class="font-medium">3 sustainability feature</span>
+    <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+  </div>
+</div>
+</div>
+ <!---------------------------------------- 5th row div ----------------------------------------------------------->
+ <div class=" flex flex-row space-x-2 -me-12">
+  <!----------------------------------------------- 5th row img1 --------------------------------------------->
+  <div class="mt-3">
+    <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+      <div class="trap px-2">
+        <span>Best Seller</span></div>
+      <img src="Assests/slider-5/img-1.webp"class="px-10">
+    </div>
+    <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+    <span class="font-medium hover:text-orange-600">Mighty Patch™ Original patch from Hero Cosmetics - Hydrocolloid Acne Pimple Patch for Covering Zits and Blemishes in Face and Skin, Vegan-friendly and Not Tested on Animals (36 Count)</span>
+    <div>
+      <div>
+        <span class="bg-gray-200 text-sm font-medium py-1 px-2 mx-1">36 Count (Pack of 1)</span>
+      </div>
+      <div>
+        <span class="text-sm">Option:<a href="#"class="font-medium text-blue-800 text-xs ">3 sizes</a></span>
+      </div>
+      <span class="mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+        <span class="fa-solid fa-angle-down -ms-1"></span>
+        <span class="font-normal text-blue-800 hover:text-blue-950">169,765</span>
+    </div>
+    <div>
+      <span class="font-normal text-sm">100K+ bought in past month</span>
+    </div>
+    <div class="mt-2">
+      <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">12</span><sup class="font-normal">99</sup></span>
+      <span class="font-normal">($0.36/Count)</span>
+    </div>
+    <div class="mt-1">
+      <span class="font-normal">Delivery </span>
+      <span class="text-bold">Wed, Jan 15 </span>
+    </div>
+    <div>
+      <span class="text-sm font-normal">Ships to Pakistan</span>
+    </div>
+    <div>
+      <span class="font-medium text-gray-600">FSA or HSA eligible</span>
+    </div>
+    </div>
+  </div>
+        <!----------------------------------------------- 5th row img2 --------------------------------------------->
+        <div class="mt-3">
+          <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+            <div class="trap px-2">
+              <span>Best Seller</span></div>
+            <img src="Assests/slider-5/img-2.webp" alt="vegetable chopper"class="px-9"></div>
+          <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+          <span class="font-medium hover:text-orange-600">The Nightingale: A Novel</span>          
+          <div>
+            <div><span class="font-normal">by <a href="#"class="font-normal text-blue-800">Kristin Hannah</a> </span></div>
+            <span class="mt-1">
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+              <span class="fa-solid fa-angle-down -ms-1"></span>
+              <span class="font-normal text-blue-800 hover:text-blue-950">337,649</span>
+          </div>
+          <div>
+            <span class="font-medium text-blue-800">Paperback</span>
+          </div>
+          <div>
+            <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">8</span><sup class="font-normal">42</sup></span>
+            <span class="font-normal">List: </span><del class="font-thin text-sm">$17.99</del>
+        </div>
+            <div class="mt-1">
+              <span class="font-medium text-sm">Delivery </span>
+              <span class="text-bold">Fri, Jan 17</span>
+            </div>
+            <div>
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+            <div>
+              <span class="font-normal">More Buying Choices</span>
+            </div>
+            <div>
+              <span class="a-color-base font-medium">$2.67</span>
+              <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(29 + used & new offers)</a>
+            </div>
+            <div>
+              <span class="font-normal">Other formats: <a href="#" class="font-normal text-blue-800 text-sm">Audible Audiobook, Kindle, Paperback, Audio CD</a></span>
+            </div> 
+          </div>
+        </div>
+          <!----------------------------------------------- 5th row img3 --------------------------------------------->
+          <div class="mt-3">
+            <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+              <div class="trap px-1">
+                <span>Editor's pick</span></div>
+              <img src="Assests/slider-5/img-3.webp" class="px-9"></div>
+            <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+            <span class="font-medium hover:text-orange-600">The Midnight Library: A GMA Book Club Pick: A Novel</span>
+            <p class="font-normal">by<a href="#" class="text-blue-700 font-normal">Matt Haig</a></p>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">262,230</span>
+            </div>
+            <div>
+              <span class="font-medium text-blue-800">Paperback</span>
+            </div>
+            <div class="mt-2">
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">8</span><sup class="font-normal">99</sup></span>
+              <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$18.00</del></div>
+            </div>
+            <div class="mt-1">
+              <span class="font-medium text-sm">Delivery </span>
+              <span class="text-bold">Thu, Jan 16</span>
+            </div>
+            <div>
+              <span class="text-sm font-normal">Ships to Pakistan</span>
+            </div>
+            <div>
+              <span class="font-normal">More Buying Choices</span>
+            </div>
+            <div>
+              <span class="a-color-base font-medium">$3.15</span>
+              <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(31+ used & new offers)</a>
+            </div>
+            <div>
+              <span class="font-normal">Other formats:</span>
+              <span><a href="#" class="text-blue-800 font-normal text-[.95vw] hover:text-blue-950">Kindle, Audible Audiobook, Paperback</a></span>
+            </div>
+            </div>
+          </div>
+<!-------------------------------------------------------5th row img4  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <div class="trap px-2">
+      <span>Editor,s Pick</span></div>
+    <img src="Assests/slider-5/img-4.webp"class="px-9">
+  </div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">Counting Miracles: A Novel </span>
+  <div><span>by <a href="#"class="text-blue-800 font-normal">Nicholas Sparks</a></span></div>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">14,354</span>
+  </div>
+  <div>
+    <span class="font-medium text-blue-800">Hardcover</span>
+  </div>
+  <div>
+    <span class="font-normal">No featured offers available</span>
+  </div>
+  <div class="mt-2"> 
+   <span class="font-normal">$9.00 <a href="#" class="font-normal text-sm text-blue-800">(59 used & new offers)</a></span>
+  </div>
+  <div>
+    <span class="font-normal">Other formats:</span>
+    <span><a href="#" class="text-blue-800 font-normal text-[.95vw] hover:text-blue-950">Kindle, Audible Audiobook, Paperback</a></span>
+  </div>
+  </div>
+</div>
+<!---------------------------------------------------5th row img5  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <div class="trap px-1">
+      <span>Editor's pick</span></div>
+    <img src="Assests/slider-5/img-5.webp"class="mt-2"></div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">Conair Hot Rollers Hair Curlers for Long, Medium and All Hair | Heated Rollers with Hair Roller Clips Included | 1 1/2-inch and 1 3/4 inch Rollers | Amazon Exclusive</span>
+  <div>
+    <span class="bg-gray-200 text-sm font-medium py-1 px-2 mx-1">1 Count (Pack of 1)</span>
+  </div>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">21,301</span>
+  </div>
+  <div>
+    <span class="font-normal">5k+ bought in past month</span>
+  </div>
+  <div class="mt-2">
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">39</span><sup class="font-normal">99</sup></span>
+    <span class="font-normal">($39.99/Count)</span>
+  </div>
+  <div class="mt-1">
+    <span class="font-normal">Delivery </span>
+    <span class="text-bold">Wed, Jan 15 </span>
+   </div> 
+  <div>
+    <span class="text-sm font-normal">Ships to Pakistan</span>
+  </div>
+  <div>
+    <span class="font-normal">More Buying Choices</span>
+  </div>
+  <div>
+    <span class="a-color-base font-medium">$38.64</span>
+    <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(3 new offers)</a>
+  </div>
+  </div>
+</div>
+</div>
+<!------------------------------------------ 6th row div ------------------------------------------------------------>
+<div class=" flex flex-row space-x-2 -me-12">
+  <!----------------------------------------------- 6th row img1 --------------------------------------------->
+  <div class="mt-3">
+    <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+      <div class="trap px-2">
+        <span>Editor's Pick</span></div>
+      <img src="Assests/slider-6/img-1.webp" alt="book"class="mt-1 px-10">
+    </div>
+    <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+    <span class="font-medium hover:text-orange-600">The Waiting: A Ballard and Bosch Novel (A Renée Ballard and Harry Bosch Novel, 6)</span>
+    <div>
+    <span><a href="#" class="text-blue-800 font-normal text-sm">Book 6 of 6: Renée Ballard and Harry Bosch</a></span></div>
+    <div>
+      <span class="mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+        <span class="fa-solid fa-angle-down -ms-1"></span>
+        <span class="font-normal text-blue-800 hover:text-blue-950">30,710</span>
+    </div>
+    <div>
+      <span class="font-medium text-blue-800"><a href="#">Hardcover</a></span>
+    </div>
+    <div> 
+      <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">15</span><sup class="font-normal">00</sup></span>
+      <span class="font-normal">List: </span><del class="font-thin text-sm">$30.00</del>  
+    </div>
+    <div class="mt-1">
+      <span class="font-normal">Delivery </span>
+      <span class="text-bold">Thus, Jan 16 </span>
+    </div>
+    <div>
+      <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+    </div>
+    <div>
+      <span class="font-normal">More Buying Choices</span>
+    </div>
+    <div>
+      <span class="a-color-base font-medium">$8.26</span>
+      <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(35+ used & new offers)</a>
+    </div>
+    <div class="mt-2">
+      <span class="font-normal">Other formats:</span>
+      <span><a href="#" class="text-blue-800 font-medium text-[.95vw] hover:text-blue-950">Kindle, Audible Audiobook, Paperback</a></span>
+    </div>
+    </div>
+  </div>
+        <!----------------------------------------------- 6th row img2 --------------------------------------------->
+        <div class="mt-3">
+          <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+            <div class="trap px-2">
+              <span>Best Seller</span></div>
+            <img src="Assests/slider-6/img-2.webp" alt="book"class="mt-1 px-8">
+          </div>
+          <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+          <span class="font-medium hover:text-orange-600">Kate Blanc Cosmetics Castor Oil Organic (2oz), 100% Pure, Cold Pressed, Hexane Free....</span>
+          <span class="bg-gray-200 text-sm font-medium py-1 px-2 mx-1">2 Fl Oz (Pack of 1)</span>
+          <div>
+            <span class="mt-1">
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+              <span class="fa-solid fa-angle-down -ms-1"></span>
+              <span class="font-normal text-blue-800 hover:text-blue-950">114,184</span>
+          </div>
+          <div>
+            <span class="font-normal">60k+ bought in past month</span>
+          </div>
+          <div> 
+            <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">13</span><sup class="font-normal">79</sup></span>
+            <span class="font-normal">List: <del>$27.00</del></span>
+          </div>
+          <div class="mt-1">
+            <span class="font-normal">Delivery </span>
+            <span class="text-bold">Wed, Jan 15 </span>
+          </div>
+          <div>
+            <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+          </div>
+          <div class="flex flex-row mt-2">
+            <img src="Assests/slider-1/end logo.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+            <span class="font-medium">1 sustainability feature</span>
+            <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+            <div class="flex flex-row mt-1">
+              <img src="Assests/slider-2/end log.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+              <span class="font-medium">Small Business</span>
+              <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+          </div>
+        </div>
+          <!----------------------------------------------- 6th row img3 --------------------------------------------->
+          <div class="mt-3">
+            <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+              <div class="trap px-2">
+                <span>Best Seller</span></div>
+              <img src="Assests/slider-6/img-3.webp" alt="vegetable chopper"class="px-9"></div>
+            <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+            <span class="font-medium hover:text-orange-600">Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</span>
+            <div><span class="font-normal">by <a href="#"class="text-blue-800 font-normal">James Clear</a> </span></div>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-fa-star checked text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">136,041</span>
+            </div>
+            <div>
+              <span><a href="#"class="text-blue-800 font-medium">Hardcover</a></span>
+            </div>
+            <div> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">13</span><sup class="font-normal">79</sup></span>
+              <span class="font-normal">List: </span><del class="font-thin text-sm">$27.00</del></div>
+            <div class="mt-1">
+              <span class="font-normal">$14.98 delivery </span>
+            </div>
+            <div>
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+            <div>
+              <span class="font-normal">More Buying Choices</span>
+            </div>
+            <div>
+              <span class="a-color-base font-medium">$7.23</span>
+              <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(59+ used & new offers)</a>
+            </div>
+            <div class="mt-2">
+              <span class="font-normal">Other formats:</span>
+              <span><a href="#" class="text-blue-800 font-medium text-[.95vw] hover:text-blue-950">Audible Audiobook, Kindle, Paperback, Audio CD, Spiral-bound
+              </a></span>
+            </div>
+            </div>
+          </div>
+<!-------------------------------------------------------6th row img4  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <img src="Assests/slider-6/img-4.webp"class="pt-4 px-9">
+  </div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">The Lost Bookshop: The most charming and uplifting novel for 2024 and the perfect gift for book lovers!</span>
+  <div><span class="font-normal">by <a href="#"class="text-blue-800 font-normal">Evie Woods</a> </span></div>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">119,492</span>
+  </div>
+  <div>
+    <span><a href="#"class="text-blue-800 font-medium">Paperback</a></span>
+  </div>
+    <div>
+      <span class="font-normal text-sm">No featured offers available</span>
+    </div>
+    <div>
+      <span>$5.99<a href="#"class="font-normal text-blue-800 text-sm">(59 used & new offers)</a></span>
+    </div>
+    <div class="mt-2">
+      <span class="font-normal">Other formats:</span>
+      <span><a href="#" class="text-blue-800 font-medium text-[.95vw] hover:text-blue-950"> Kindle, Audible Audiobook
+      </a></span>
+    </div>
+  </div>
+</div>
+<!---------------------------------------------------3rd row img5  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <div class="trap px-1">
+      <span>Best Seller</span></div>
+    <img src="Assests/slider-6/img-5.webp"class="pt-2 px-3"></div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">SimplyVital Collagen, Retinol & Hyaluronic Acid Cream - Anti-Aging Face Moisturizer f.......</span>
+  <div>
+    <div>
+      <span class="bg-gray-200 font-normal">1.7 Fl Oz (Pack of 1)</span>
+    </div>
+    <div><span class="font-normal text-xs">Option: <a href="#"class="font-normal text-xs text-blue-800">2 sizes</a>
+    </span></div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-regular fa-star text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">16,147</span>
+  </div>
+  <div>
+    <span class="font-normal">80k+ bought in past month</span>
+  </div>
+  <div class="mt-2">
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">22</span><sup class="font-normal">89</sup></span>
+    <span class="font-normal text-sm"> ($13.46/Fl Oz)</span>
+  </div>
+  <div class="mt-1">
+    <span class="font-normal">Delivery </span>
+    <span class="text-bold">Wed, Jan 15 </span>
+   </div> 
+  <div>
+    <span class="text-sm font-normal">Ships to Pakistan</span>
+  </div>
+  <div class="flex flex-row mt-2">
+    <img src="Assests/slider-1/end logo.jpeg" alt="logo" width="8%" class="mx-1 mt-1 mb-1">
+    <span class="font-medium">1 sustainability feature</span>
+    <span class="fa-solid fa-angle-down ms-1 mt-2"></span></div>
+  </div>
+</div>
+</div>
+<!---------------------------------------- 7th row div ----------------------------------------------------------->
+<div class=" flex flex-row space-x-2 -me-12">
+  <!----------------------------------------------- 7th row img1 --------------------------------------------->
+  <div class="mt-3">
+    <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+      <div class="trap text-xs py-1">
+        <span>Goodreads Choice</span></div>
+      <img src="Assests/slider-7/img-1.webp"class="px-10 pt-1">
+    </div>
+    <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+    <span class="font-medium hover:text-orange-600">Then She Was Gone: A Novel</span>
+    <div>
+      <div><span class="font-normal text-sm">by <a href="#"class="fonr-normal text-sm text-blue-800">Lisa Jewell</a></span></div>
+      <span class="mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+        <span class="fa-solid fa-angle-down -ms-1"></span>
+        <span class="font-normal text-blue-800 hover:text-blue-950"> 116,607</span>
+    </div>
+    <div>
+      <span><a href="#" class="font-medium text-sm text-blue-800">Paperback</a></span>
+    </div>
+    <div class="mt-2">
+      <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">8</span><sup class="font-normal">81</sup></span>
+      <span class="font-normal">List:<del>$16.00</del></span>
+    </div>
+    <div class="mt-1">
+      <span class="font-normal">Delivery </span>
+      <span class="text-bold">Fri, Jan 17 </span>
+    </div>
+    <div>
+      <span class="text-sm font-normal">Ships to Pakistan</span>
+    </div>
+    <div>
+      <span class="font-normal">More Buying Choices</span>
+    </div>
+    <div>
+      <span class="a-color-base font-medium">$1.95</span>
+      <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(34+ used & new offers)</a>
+    </div>
+    <div>
+      <span class="font-normal">Other formats: <a href="#" class="font-normal text-blue-800 text-sm">Audible Audiobook, Kindle, Paperback, Audio CD</a></span>
+    </div> 
+    </div>
+  </div>
+        <!----------------------------------------------- 5th row img2 --------------------------------------------->
+        <div class="mt-3">
+          <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+            <div class="trap px-2">
+              <span>Best Seller</span></div>
+            <img src="Assests/slider-7/img-2.webp"class=" py-20"></div>
+          <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+          <span class="font-medium hover:text-orange-600">Crocs Unisex Adult Classic Clog</span>          
+          <div>
+            <div><span class="font-bold">#1 Top Rated</span></div>
+            <span class="mt-1">
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa-fa-star checked text-orange-400"></span>
+              <span class="fa-solid fa-angle-down -ms-1"></span>
+              <span class="font-normal text-blue-800 hover:text-blue-950">610,851</span>
+          </div>
+          <div>
+            <span class="font-normal">10k+ bought in past month</span>
+          </div>
+          <div>
+            <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">34</span><sup class="font-normal">50</sup></span>
+            <span class="font-normal">List: </span><del class="font-thin text-sm">$49.99</del>
+        </div>
+            <div class="mt-1">
+              <span class="font-medium text-sm">$55.31 delivery</span>
+            </div>
+            <div>
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>  
+          </div>
+        </div>
+          <!----------------------------------------------- 5th row img3 --------------------------------------------->
+          <div class="mt-3">
+            <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+              <div class="trap px-1">
+                <span>Best Seller</span></div>
+              <img src="Assests/slider-7/img-3.webp" class="px-3 pt-1"></div>
+            <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+            <span class="font-medium hover:text-orange-600">(Paper Airplanes) - Klutz Book of Paper Aeroplanes Craft Kit</span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950"> 7,909</span>
+            </div>
+            <div>
+              <span class="font-normal">40k+ bought in past month</span>
+            </div>
+            <div class="mt-2">
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">10</span><sup class="font-normal">92</sup></span>
+              <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm"> $16.95</del></div>
+            </div>
+            <div class="mt-1">
+              <span class="font-medium text-sm">Delivery </span>
+              <span class="text-bold">Wed, Jan 15</span>
+            </div>
+            <div>
+              <span class="text-sm font-normal">Ships to Pakistan</span>
+            </div>
+            <div>
+              <span class="font-normal">More Buying Choices</span>
+            </div>
+            <div>
+              <span class="a-color-base font-medium">$6.46</span>
+              <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(13+ used & new offers)</a>
+            </div>
+           <div><span class="font-normal">Ages: 7 - 15 years</span></div>
+            </div>
+          </div>
+<!-------------------------------------------------------5th row img4  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <div class="trap px-2">
+      <span>Best seller</span></div>
+    <img src="Assests/slider-7/img-4.webp"class="pt-9">
+  </div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">e.l.f. Monochromatic Multi Stick, Creamy, Lightweight, Versatile, Luxurious, Adds ...</span>
+  <div><span class="bg-gray-200 text-sm font-medium p-1">0.17 Ounce (Pack of 1)</span></div>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">72,155</span>
+  </div>
+  <div>
+    <span class="font-normal">30k+ bought in past month</span>
+  </div>
+  <div class="mt-2">
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">4</span><sup class="font-normal">00</sup></span>
+    <div class="inline-block"><span class="font-normal text-sm">($25.81/Ounce)List: </span><del class="font-thin text-sm"> $16.95</del></div>
+  </div>
+  <div class="mt-1">
+    <span class="font-medium text-sm">Delivery </span>
+    <span class="text-bold">Wed, Jan 15</span>
+  </div>
+  <div>
+    <span class="text-sm font-normal">Ships to Pakistan</span>
+  </div>
+  </div>
+</div>
+<!---------------------------------------------------5th row img5  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <img src="Assests/slider-7/img-5.webp"class="pt-11"></div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">Ecolution Patented Micro-Pop Microwave Popcorn Popper with Temperature Safe Glass, 3-in-1 Lid Measures Kernels</span>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950"> 69,529</span>
+  </div>
+  <div>
+    <span class="font-normal">7k+ bought in past month</span>
+  </div>
+  <div class="mt-2">
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">19</span><sup class="font-normal">99</sup></span>
+  </div>
+  <div class="mt-1">
+    <span class="font-normal">Delivery </span>
+    <span class="text-bold">Wed, Jan 15 </span>
+   </div> 
+  <div>
+    <span class="text-sm font-normal">Ships to Pakistan</span>
+  </div>
+  <div>
+    <span class="font-normal">More Buying Choices</span>
+  </div>
+  <div>
+    <span class="a-color-base font-medium">$17.99</span>
+    <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(2 used & new offers)</a>
+  </div>
+  </div>
+</div>
+</div>
+<!---------------------------------------- 8th row div --------------------------------------------------------->
+<div class=" flex flex-row space-x-2 -me-12">
+  <!----------------------------------------------- 8th row img1 --------------------------------------------->
+  <div class="mt-3">
+    <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+      <div class="trap text-xs py-1">
+        <span>Goodreads Choice</span></div>
+      <img src="Assests/slider-8/img-1.webp"class=" pt-1">
+    </div>
+    <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+    <span class="font-medium hover:text-orange-600">Ninja Air Fryer Pro 4-in-1 with 5 QT Capacity, Air Fry, Roast, Reheat, Dehydrate, Air Crisp Technology with 400F for ho...</span>
+    <div>
+      <span class="mt-1">
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa fa-star checked text-orange-400"></span>
+        <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+        <span class="fa-solid fa-angle-down -ms-1"></span>
+        <span class="font-normal text-blue-800 hover:text-blue-950">2,350</span>
+    </div>
+    <div>
+      <span class="font-normal texr-sm">30K+ bought in past month</span>
+    </div>
+    <div class="mt-2">
+      <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">89</span><sup class="font-normal">99</sup></span>
+      <span class="font-normal">List:<del>$119.99</del></span>
+    </div>
+    <div class="mt-1">
+      <span class="font-normal">Delivery </span>
+      <span class="text-bold">Wed, Jan 15 </span>
+    </div>
+    <div>
+      <span class="text-sm font-normal">Ships to Pakistan</span>
+    </div>
+    <div>
+      <span class="font-normal">More Buying Choices</span>
+    </div>
+    <div>
+      <span class="a-color-base font-medium">$76.49</span>
+      <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(7+ used & new offers)</a>
+    </div>  
+    </div>
+  </div>
+        <!----------------------------------------------- 8th row img2 --------------------------------------------->
+        <div class="mt-3">
+          <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+            <div class="trap px-2">
+              <span>Best Seller</span></div>
+            <img src="Assests/slider-8/img-2.webp"class=" px-9 pt-1"></div>
+          <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+          <span class="font-medium hover:text-orange-600">The Things We Cannot Say: A WWII Historical Fiction Novel</span>          
+          <div>
+            <div><span class="font-medium">by <a href="#"class="text-blue-800 font-normal"> Kelly Rimmer</a> </span></div>
+            <span class="mt-1">
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa fa-star checked text-orange-400"></span>
+              <span class="fa-fa-star checked text-orange-400"></span>
+              <span class="fa-solid fa-angle-down -ms-1"></span>
+              <span class="font-normal text-blue-800 hover:text-blue-950">41,940</span>
+          </div>
+          <div>
+            <span class="font-medium text-blue-800 text-sm">Paperback</span>
+          </div>
+          <div>
+            <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">9</span><sup class="font-normal">64</sup></span>
+            <span class="font-normal">List: </span><del class="font-thin text-sm">$18.99</del>
+        </div>
+            <div class="mt-1">
+              <span class="font-medium text-sm">$14.98 delivery</span>
+            </div>
+            <div>
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>  
+            <div>
+              <span class="font-normal">More Buying Choices</span>
+            </div>
+            <div>
+              <span class="a-color-base font-medium">$4.25</span>
+              <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(14+ used & new offers)</a>
+            </div>
+            <div>
+              <span class="font-normal">Other formats: <a href="#" class="font-normal text-blue-800 text-sm">Audible Audiobook, Kindle, Paperback, Audio CD</a></span>
+            </div> 
+          </div>
+        </div>
+          <!----------------------------------------------- 8th row img3 --------------------------------------------->
+          <div class="mt-3">
+            <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+              <div class="trap px-1">
+                <span>Editor's Pick</span></div>
+              <img src="Assests/slider-8/img-3.webp" class="px-9"></div>
+            <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+            <span class="font-medium hover:text-orange-600">The Silent Patient</span>
+            <div><span class="font-medium">by <a href="#"class="text-blue-800 font-normal"> Alex Michaelides</a> </span></div>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950"> 342,868</span>
+            </div>
+            <div>
+              <span class="font-medium text-sm text-blue-800">Paperback</span>
+            </div>
+            <div class="mt-2">
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">8</span><sup class="font-normal">27</sup></span>
+              <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$17.99</del></div>
+            </div>
+            <div class="mt-1">
+              <span class="font-medium text-sm">Delivery </span>
+              <span class="text-bold">Mon, Jan 20</span>
+            </div>
+            <div>
+              <span class="text-sm font-normal">Ships to Pakistan</span>
+            </div>
+            <div>
+              <span class="font-normal">More Buying Choices</span>
+            </div>
+            <div>
+              <span class="a-color-base font-medium">$2.36</span>
+              <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(41+ used & new offers)</a>
+              <div>
+                <span class="font-normal">Other formats: <a href="#" class="font-normal text-blue-800 text-sm"> Audible Audiobook, Kindle, Hardcover, Audio CD, Mass Market Paperback</a></span>
+              </div> 
+            </div>
+            </div>
+          </div>
+<!-------------------------------------------------------5th row img4  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <img src="Assests/slider-8/img-4.webp" class="px-8 pt-3"></div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">Night Watch (Pulitzer Prize Winner): A novel</span>
+  <div><span class="font-medium">by <a href="#"class="text-blue-800 font-normal"> Jayne Anne Phillips</a> </span></div>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">3,956</span>
+  </div>
+  <div>
+    <span class="font-medium text-sm text-blue-800">Hardcover</span>
+  </div>
+  <div class="mt-2">
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">21</span><sup class="font-normal">88</sup></span>
+    <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm">$28.00</del></div>
+  </div>
+  <div class="mt-1">
+    <span class="font-medium text-sm">Delivery </span>
+    <span class="text-bold">Thus, Jan 16</span>
+  </div>
+  <div>
+    <span class="text-sm font-normal">Ships to Pakistan</span>
+  </div>
+  <div>
+    <span class="font-normal">More Buying Choices</span>
+  </div>
+  <div>
+    <span class="a-color-base font-medium">$13.90</span>
+    <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(33+ used & new offers)</a>
+    <div>
+      <span class="font-normal">Other formats: <a href="#" class="font-normal text-blue-800 text-sm">Kindle, Audible Audiobook, Paperback</a></span>
+    </div> 
+  </div>
+  </div>
+</div>
+<!---------------------------------------------------5th row img5  ------------------------------------------------------->
+<div class="mt-3">
+  <div class="bg-gray-50  border-none border-radius h-[36vh] w-[16vw] px-2">
+    <div class="trap px-1">
+      <span>Editor's Pick</span></div>
+    <img src="Assests/slider-8/img-5.webp"class="px-9"></div>
+  <div class=" border w-[16vw] h-[60vh] px-2 pt-2">
+  <span class="font-medium hover:text-orange-600">All the Broken Places: A Novel</span>
+  <div><span class="font-medium">by <a href="#"class="text-blue-800 font-normal"> John Boyne</a></span></div>
+  <div>
+    <span class="mt-1">
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa fa-star checked text-orange-400"></span>
+      <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+      <span class="fa-solid fa-angle-down -ms-1"></span>
+      <span class="font-normal text-blue-800 hover:text-blue-950">26,293</span>
+  </div>
+  <div>
+    <span class="font-medium text-sm text-blue-800">Paperback</span>
+  </div>
+  <div class="mt-2">
+    <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">15</span><sup class="font-normal">90</sup></span>
+    <div class="inline-block"><span class="font-normal">List: </span><del class="font-thin text-sm"> $19.00</del></div>
+  </div>
+  <div class="mt-1">
+    <span class="font-normal">Delivery </span>
+    <span class="text-bold">Thus, Jan 16 </span>
+   </div> 
+  <div>
+    <span class="text-sm font-normal">Ships to Pakistan</span>
+  </div>
+  <div>
+    <span class="font-normal">More Buying Choices</span>
+  </div>
+  <div>
+    <span class="a-color-base font-medium">$6.95</span>
+    <a href="#" class="text-blue-800 font-normal hover:text-blue-950">(17+ used & new offers)</a>
+  </div>
+  <div>
+    <span class="font-normal">Other formats: <a href="#" class="font-normal text-blue-800 text-sm"> Kindle, Audible Audiobook, Library Binding, Mass Market Paperback</a></span>
+  </div> 
+  </div>
+</div>
+</div>
+   </div>
+</div>
+<!------------------------------------- End slider Heading ------------------------------------------------->
+       <div class="mt-5 mb-5 pt-3 px-5 border overflow-hidden">
+       <div class="flex flex-row justify-between">
+        <div class="grid-col-8">
+          <h1 class="-inline-block">Customers who viewed items in your browsing history also viewed</h1></div>
+          <div class="grid-col-4">
+            <span class="font-normal">page 1 of 2 <span class="text-gray-300 fonr-thin">&nbsp;|</span><a href="#" class="font-normal text-blue-800">&nbsp;Start over</a></span>
+          </div>
+       </div>
+<!------------------------------------------- First slider ---------------------------------------------------->
+<div class="mt-5 pt-5 w-100">
+  <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active flex-nowrap">
+              <div class="row flex-nowrap">
+                <!--------------------------- Changed to col-md-2 for 5 images per row ---------------------------->
+                  <div class="col-md-2"> 
+                      <a href="#">
+                          <div><img src="Assests/2nd last/img-1.jpg" class="d-block" alt="Image 1"></div></a>
+                          <div class="w-[12vw] ps-4">
+                          <div class="font-normal text-blue-800 hover:underline hover:text-black">The Hero Code: Lessons Learned from Lives Well Lived</div>
+                           <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                          <div class="font-normal text-sm">
+                            <span class="mt-1">
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa-solid fa-angle-down -ms-1"></span>
+                              <span class="font-normal text-blue-800 hover:text-blue-950">3,867</span>
+                          </div>
+                          <div>
+                            <span class="font-normal text-xs">Hardcover</span>
+                          </div>
+                          <div>
+                            <span class="font-medium text-xl"><sup>$</sup>12.10</span>
+                          </div>
+                          <div>
+                            <span class="font-normal text-sm">$14.98 shipping</span>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#" class="image-link">
+                          <img src="Assests/2nd last/img-2.jpg" class="d-block px-1" alt="Image 2">
+                          <div class="w-[12vw]">
+                            <div class="font-normal text-blue-800 hover:underline hover:text-black">Paper Airplane Kit
+                              Paper Airplane Kit</div>
+                             <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Publications International....</a></div>
+                            <div class="font-normal text-sm">
+                              <span class="mt-1">
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa-regular fa fa-star-half-stroke text-orange-400"></span>
+                                <span class="fa-solid fa-angle-down -ms-1"></span>
+                                <span class="font-normal text-blue-800 hover:text-blue-950"> 3,616</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-xs">Hardcover</span>
+                            </div>
+                            <div>
+                              <span class="font-medium text-xl"><sup>$</sup>14.99</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-sm">$14.98 shipping</span>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#" class="image-link">
+                          <img src="Assests/2nd last/img-3.jpg" class="d-block px-1" alt="Image 3">
+                          <div class="w-[12vw]">
+                            <div class="font-normal text-blue-800 hover:underline hover:text-black">The Wisdom of the Bullfrog: Leadership Made Simple (But Not Easy)
+                             </div>
+                             <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                            <div class="font-normal text-sm">
+                              <span class="mt-1">
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa-solid fa-angle-down -ms-1"></span>
+                                <span class="font-normal text-blue-800 hover:text-blue-950">2,565</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-xs">Hardcover</span>
+                            </div>
+                            <div>
+                              <span class="font-medium text-xl"><sup>$</sup>13.75</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-sm">$14.98 shipping</span>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#" class="image-link">
+                          <img src="Assests/2nd last/img-4.jpg" class="d-block px-1" alt="Image 4">
+                          <div class="w-[12vw]">
+                            <div class="font-normal text-blue-800 hover:underline hover:text-black">Make Your Bed: A Daily Journal: A Daily Journal
+                              Make Your Bed: A Daily Journal: A Daily Journal</div>
+                             <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                            <div class="font-normal text-sm">
+                              <span class="mt-1">
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                                <span class="fa-solid fa-angle-down -ms-1"></span>
+                                <span class="font-normal text-blue-800 hover:text-blue-950">363</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-xs">Diary</span>
+                            </div>
+                            <div>
+                              <span class="font-medium text-xl"><sup>$</sup>9.29</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-sm">$14.98 shipping</span>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#" class="image-link">
+                          <img src="Assests/2nd last/img-5.jpg" class="d-block px-1 " alt="Image 5">
+                          <div class="w-[12vw]">
+                            <div class="font-normal text-blue-800 hover:underline hover:text-black">Make Your Bed with Skipper the Seal (Skipper the Seal, 1)</div>
+                             <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                            <div class="font-normal text-sm">
+                              <span class="mt-1">
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa-solid fa-angle-down -ms-1"></span>
+                                <span class="font-normal text-blue-800 hover:text-blue-950">1,643</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-xs">Hardcover</span>
+                            </div>
+                            <div>
+                              <span class="font-medium text-xl"><sup>$</sup>10.44</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-sm">$14.98 shipping</span>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                   <div class="col-md-2">
+                      <a href="#" class="image-link">
+                          <img src="Assests/2nd last/img-6.jpg" class="d-block px-1" alt="Image 5">
+                          <div class="w-[12vw]">
+                            <div class="font-normal text-blue-800 hover:underline hover:text-black">Sea Stories: My Life in Special Operations</div>
+                             <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                            <div class="font-normal text-sm">
+                              <span class="mt-1">
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa-fa-star checked text-orange-400"></span>
+                                <span class="fa-solid fa-angle-down -ms-1"></span>
+                                <span class="font-normal text-blue-800 hover:text-blue-950">7,449</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-xs">Hardcover</span>
+                            </div>
+                            <div>
+                              <span class="font-medium text-xl"><sup>$</sup>15.69</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-sm">$14.98 shipping</span>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#" class="image-link">
+                        <img src="Assests/2nd last/img-17.jpg" class="d-block px-1" alt="Image 5">
+                        <div class="w-[12vw]">
+                          <div class="font-normal text-blue-800 hover:underline hover:text-black">Make Your Bed: Feel grounded and think positive in 10 simple steps</div>
+                           <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                          <div class="font-normal text-sm">
+                            <span class="mt-1">
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa-solid fa-angle-down -ms-1"></span>
+                              <span class="font-normal text-blue-800 hover:text-blue-950">4</span>
+                          </div>
+                          <div>
+                            <span class="font-normal text-xs">Hardcover</span>
+                          </div>
+                          <div>
+                            <span class="font-medium text-xl"><sup>$</sup>28.72</span>
+                          </div>
+                          <div>
+                            <span class="font-normal text-sm">$14.98 shipping</span>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+          </div>
+          <!------------------------------------------- Changed to col-md-2 for 5 images per row ------------------------------>
+          <div class="carousel-item">
+              <div class="row">
+                  <div class="col-md-2">
+                      <a href="#link6" class="image-link">
+                          <img src="Assests/2nd last/img-8.jpg" class="d-block px-3" alt="Image 6">
+                          <div class="w-[12vw] ps-4">
+                            <div class="font-normal text-blue-800 hover:underline hover:text-black">The Hero Code: Lessons Learned from Lives Well Lived</div>
+                             <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                            <div class="font-normal text-sm">
+                              <span class="mt-1">
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa-fa-star checked text-orange-400"></span>
+                                <span class="fa-solid fa-angle-down -ms-1"></span>
+                                <span class="font-normal text-blue-800 hover:text-blue-950">3,867</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-xs">Hardcover</span>
+                            </div>
+                            <div>
+                              <span class="font-medium text-xl"><sup>$</sup>12.10</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-sm">$14.98 shipping</span>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#link7" class="image-link">
+                          <img src="Assests/2nd last/img-9.jpg" class="d-block px-1" alt="Image 7">
+                          <div class="w-[12vw]">
+                            <div class="font-normal text-blue-800 hover:underline hover:text-black">The Hero Code: Lessons Learned from Lives Well Lived</div>
+                             <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                            <div class="font-normal text-sm">
+                              <span class="mt-1">
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa-fa-star checked text-orange-400"></span>
+                                <span class="fa-solid fa-angle-down -ms-1"></span>
+                                <span class="font-normal text-blue-800 hover:text-blue-950">3,867</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-xs">Hardcover</span>
+                            </div>
+                            <div>
+                              <span class="font-medium text-xl"><sup>$</sup>12.10</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-sm">$14.98 shipping</span>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#link8" class="image-link">
+                          <img src="Assests/2nd last/iimg-10.jpg" class="d-block px-1" alt="Image 8">
+                          <div class="w-[12vw]">
+                            <div class="font-normal text-blue-800 hover:underline hover:text-black">The Hero Code: Lessons Learned from Lives Well Lived</div>
+                             <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                            <div class="font-normal text-sm">
+                              <span class="mt-1">
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa fa-star checked text-orange-400"></span>
+                                <span class="fa-fa-star checked text-orange-400"></span>
+                                <span class="fa-solid fa-angle-down -ms-1"></span>
+                                <span class="font-normal text-blue-800 hover:text-blue-950">3,867</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-xs">Hardcover</span>
+                            </div>
+                            <div>
+                              <span class="font-medium text-xl"><sup>$</sup>12.10</span>
+                            </div>
+                            <div>
+                              <span class="font-normal text-sm">$14.98 shipping</span>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-2"> 
+                    <a href="#link1" class="image-link">
+                        <img src="Assests/2nd last/img-11.jpg" class="d-block px-1" alt="Image 1">
+                        <div class="w-[12vw]">
+                          <div class="font-normal text-blue-800 hover:underline hover:text-black">The Hero Code: Lessons Learned from Lives Well Lived</div>
+                           <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                          <div class="font-normal text-sm">
+                            <span class="mt-1">
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa-fa-star checked text-orange-400"></span>
+                              <span class="fa-solid fa-angle-down -ms-1"></span>
+                              <span class="font-normal text-blue-800 hover:text-blue-950">3,867</span>
+                          </div>
+                          <div>
+                            <span class="font-normal text-xs">Hardcover</span>
+                          </div>
+                          <div>
+                            <span class="font-medium text-xl"><sup>$</sup>12.10</span>
+                          </div>
+                          <div>
+                            <span class="font-normal text-sm">$14.98 shipping</span>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#link2" class="image-link">
+                        <img src="Assests/2nd last/img-12.jpg" class="d-block px-1" alt="Image 2">
+                        <div class="w-[12vw]">
+                          <div class="font-normal text-blue-800 hover:underline hover:text-black">The Hero Code: Lessons Learned from Lives Well Lived</div>
+                           <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                          <div class="font-normal text-sm">
+                            <span class="mt-1">
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa fa-star checked text-orange-400"></span>
+                              <span class="fa-fa-star checked text-orange-400"></span>
+                              <span class="fa-solid fa-angle-down -ms-1"></span>
+                              <span class="font-normal text-blue-800 hover:text-blue-950">3,867</span>
+                          </div>
+                          <div>
+                            <span class="font-normal text-xs">Hardcover</span>
+                          </div>
+                          <div>
+                            <span class="font-medium text-xl"><sup>$</sup>12.10</span>
+                          </div>
+                          <div>
+                            <span class="font-normal text-sm">$14.98 shipping</span>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2"> 
+                  <a href="#link1" class="image-link">
+                      <img src="Assests/2nd last/img-13.jpg" class="d-block px-1" alt="Image 1">
+                      <div class="w-[12vw]">
+                        <div class="font-normal text-blue-800 hover:underline hover:text-black">The Hero Code: Lessons Learned from Lives Well Lived</div>
+                         <div><a href="#" class="text-xs font-normal text-blue-800 hover:underline hover:text-black">>Admiral William H. McRaven</a></div>
+                        <div class="font-normal text-sm">
+                          <span class="mt-1">
+                            <span class="fa fa-star checked text-orange-400"></span>
+                            <span class="fa fa-star checked text-orange-400"></span>
+                            <span class="fa fa-star checked text-orange-400"></span>
+                            <span class="fa fa-star checked text-orange-400"></span>
+                            <span class="fa-fa-star checked text-orange-400"></span>
+                            <span class="fa-solid fa-angle-down -ms-1"></span>
+                            <span class="font-normal text-blue-800 hover:text-blue-950">3,867</span>
+                        </div>
+                        <div>
+                          <span class="font-normal text-xs">Hardcover</span>
+                        </div>
+                        <div>
+                          <span class="font-medium text-xl"><sup>$</sup>12.10</span>
+                        </div>
+                        <div>
+                          <span class="font-normal text-sm">$14.98 shipping</span>
+                        </div>
+                      </div>
+                  </a>
+              </div>
+              </div>
+          </div>
+      </div>
+      <button class = "carousel-control-prev" type ="button" data-bs-target ="#imageSlider"
+          data-bs-slide="prev"style="margin-left: -7em;"> 
+          <i class="fa-solid fa-chevron-left fa-lg  hover:bg-gray-100" style="color: rgb(31, 30, 30);"></i>
+        </span> 
+          <!-- <span
+              class="carousel-control-prev-icon"></span>  -->
+          <span
+              class="visually-hidden">Previous</span> 
+      </button>
+      <button
+          class="carousel-control-next fa-square"
+          type="button"
+          data-bs-target ="#imageSlider"
+          data-bs-slide ="next"style="margin-right: -7em;" >
+          <i class="fa-solid fa-angle-right fa-lg hover:bg-gray-100" style="color: rgb(31, 30, 30);"></i>
+          <span
+              class ="carousel-control-next-icon"></span> 
+          <span
+              class ="visually-hidden">Next</span> 
+      </button> 
+  </div> 
+</div>
+<!------------------------------------------- sigin section  ------------------------------------------------->
+<hr>
+<div class="text-center mt-5 h-[15vh] gap-2vh">
+  <h2 class="text-2xl">See personalized recommendations</h2>
+  <button class="w-[15vw] mt-2 bg-yellow-300 rounded-2xl font-normal h-8 hover:bg-yellow-400">
+  <a href="#">Sign in</a></button>
+  <p class="font-thin text-xs">New Customer? <span><a href="#" class="text-blue-900 text-xm underline">Start here.</a></span></p>
+</div>
+</div>
+<!----------------------------------------------- footer ------------------------------------------------------->
+<div class="pre-footer">
+  <a href="#"> Back to top</a>
+</div>
+<div class="footer-wrapper">
+  <div class="footer">
+    <div class="footerlinks">
+      <h6>Get to Know Us</h6>
+      <div class="f-links">
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+        <a href="#">About Amazon</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Amazon Devices</a>
+        <a href="#">Amazon Science</a>
+      </div>
+    </div>
+    <div class="footerlinks">
+      <h6>Make Money with Us</h6>
+      <div class="f-links">
+        <a href="#">Sell products on Amazon</a>
+        <a href="#">Sell on Amazon Business</a>
+        <a href="#">Sell apps on Amazon</a>
+        <a href="#">Become an Affiliate</a>
+        <a href="#">Advertise Your Products </a>
+        <a href="#">Self-Publish with Us</a>
+        <a href="#">Host an Amazon Hub</a>
+        <a href="#">See More Make Money with Us</a>
+      </div>
+    </div>
+    <div class="footerlinks">
+      <h6>Amazon Payment Products</h6>
+      <div class="f-links">
+        <a href="#">Amazon Business Card</a>
+        <a href="#">Shop with Points</a>
+        <a href="#">Reload Your Balance</a>
+        <a href="#">Amazon Currency Converter</a>
+      </div>
+    </div>
+    <div class="footerlinks">
+      <h6>Let Us Help You</h6>
+      <div class="f-links">
+        <a href="#">Amazon & COVID-19</a>
+        <a href="#">Your Account</a>
+        <a href="#">Your Order</a>
+        <a href="#">Shipping Rates & Policies</a>
+        <a href="#">Return & Replacements</a>
+        <a href="#">Shipping Rates & Policies</a>
+        <a href="#">Manage Your Content & Devices</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-2">
+  <div class="f-logo">
+    <a href="#"><img src="Assests/logo.png" alt="" /></a>
+  </div>
+  <div class="f2-links">
+    <a href="#"><i class="bi bi-globe2"></i><span>English</span></a>
+    <a href="#">$ USD-U.S.Dollar</a>
+    <a href="#"
+      ><img src="https://flagsapi.com/US/flat/64.png" /><span>United States</span></a>
+  </div>
+</div>
+<div class="p-footer-wrapper">
+  <div class="p-footer">
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Amazon Music</a>
+      <a href="#">Stream millions of songs</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Amazon Ads</a>
+      <a href="#">Reach customers wherever they spend their time</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">6pm</a>
+      <a href="#">Score deals on fashion brands</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">AbeBooks</a>
+      <a href="#">Books, art & collectibles</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">ACX</a>
+      <a href="#">Audio Book Publishing Makes Easy</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Sell on Amazon</a>
+      <a href="#">Start a Selling Account</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Veeqo</a>
+      <a href="#">Shipping Software Inventory Management</a>
+    </div>
+  </div>
+  <div class="p-footer">
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Amazon Business</a>
+      <a href="#">Everything For Your Business</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">AmazonGlobal</a>
+      <a href="#">Ship Orders
+        Internationally	</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Home Services</a>
+      <a href="#">Experienced Pros
+        Happiness Guarantee</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Amazon Web Services</a>
+      <a href="#">Scalable Cloud
+        Computing Services</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">	Audible</a>
+      <a href="#">Listen to Books & Original
+        Audio Performances</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Box Office Mojo</a>
+      <a href="#">Find Movie
+        Box Office Data</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Goodreads</a>
+      <a href="#">Book reviews
+        & recommendations</a>
+    </div>
+  </div>
+  <div class="p-footer">
+    <div class="p-footer-links">
+      <a href="#" id="p-link">IMDb</a>
+      <a href="#">Movies, TV
+        & Celebrities	</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">IMDbPro</a>
+      <a href="#">Get Info Entertainment
+        Professionals Need</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Kindle Direct Publishing</a>
+      <a href="#">Indie Digital & Print Publishing
+        Made Easy</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Prime Video Direct</a>
+      <a href="#">Video Distribution
+        Made Easy</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">	Shopbop</a>
+      <a href="#">Designer
+        Fashion Brands</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Woot!</a>
+      <a href="#">Deals and
+        Shenanigans</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">	Zappos</a>
+      <a href="#">Shoes &
+        Clothing</a>
+    </div>
+  </div>
+  <div class="p-footer1">
+    <div class="p-footer-links">
+      <a href="#" id="p-link">Ring</a>
+      <a href="#">Smart Home
+        Security Systems</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">eero WiFi</a>
+      <a href="#">Stream 4K Video
+        in Every Room</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">	Blink</a>
+      <a href="#">Smart Security
+        for Every Home</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">	Neighbors App</a>
+      <a href="#">Real-Time Crime
+        & Safety Alerts</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">	Amazon Subscription Boxes</a>
+      <a href="#">Top subscription boxes – right to your door</a>
+    </div>
+    <div class="p-footer-links">
+      <a href="#" id="p-link">PillPack</a>
+      <a href="#">Pharmacy Simplified</a>
+    </div>
+  </div>
+</div>
+<div class="p-footer2">
+  <div class="p-footer2-links">
+    <a href="#">Conditions of Use</a>
+    <a href="#">Privacy Notice</a>
+    <a href="#">Customer Health Data Privacy Disclosure</a>
+    <a href="#">Your Ads Privacy Choices</a>
+  </div>
+  <div class="p-footer2-desc"><span>&#169 1996-2025, Amazon.com, Inc. or its affiliates</span></div>   
+</div>
+<script src="script/bestseller.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
