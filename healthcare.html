@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>Amazon.com</title>
+   <link rel="stylesheet" href="style/health.css">
+   <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <div class="h-wrapper">
+    <div class="h-logo-cntry">
+      <div class="h-logo">
+        <a href="#"><img src="assests/logo.png" alt="" /></a>
+      </div>
+      <div class="h-cntry">
+        <div class="cntry-logo"><i class="bi bi-geo-alt"></i></div>
+        <div class="cntry-title">
+          <p>Deliever to</p>
+          <span>Pakistan</span>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------------srch Bar--------------------------- -->
+    <div class="h-srch">
+      <select id="select">
+        <option value="All">All</option>
+        <option value="All Departments">All Departments</option>
+        <option value="Art & Craft">Art & Craft</option>
+        <option value="Auotomotive">Auotomotive</option>
+        <option value="Baby">Baby</option>
+        <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+        <option value="Books">Books</option>
+        <option value="Boys' Fashion">Boys' Fashion</option>
+        <option value="Computers">Computers</option>
+        <option value="Deals">Deals</option>
+        <option value="Digital Music">Digital Music</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Girls' Fashion">Girls' Fashion</option>
+        <option value="Health and Household">Health and Household</option>
+        <option value="Home & Kitchen">Home & Kitchen</option>
+        <option value="Industrial & Scientific">
+          Industrial & Scientific
+        </option>
+        <option value="Kindle Store">Kindle Store</option>
+        <option value="Luggage">Luggage</option>
+        <option value="Men's Fashion">Men's Fashion</option>
+        <option value="Movies & TV">Movies & TV</option>
+        <option value="Music, CDs & Vinyl">Music, CDs & Vinyl</option>
+        <option value="Pet Supplies">Pet Supplies</option>
+        <option value="Prime Video">Prime Video</option>
+        <option value="Software">Software</option>
+        <option value="Sports & Outdoor">Sports & Outdoor</option>
+        <option value="Tools & Home Improvement">
+          Tools & Home Improvement
+        </option>
+        <option value="Toys & Games">Toys & Games</option>
+        <option value="Video Games">Video Games</option>
+        <option value="Women's Fashion">Women's Fashion</option>
+      </select>
+      <input type="text" id="h-srch" placeholder="Search Amazon" />
+      <button><i class="bi bi-search"></i></button>
+    </div>
+    <div class="h-lang">
+      <div class="lang-icon">
+        <img src="https://flagsapi.com/US/flat/64.png" />
+      </div>
+      <div class="lang-slct"><span id="lang">EN</span></div>
+    </div>
+    <div class="h-acc-list">
+      <p>Hello, sign in</p>
+      <span>Account & Lists </span>
+    </div>
+    <div class="h-rtrn">
+      <p>Returns</p>
+      <span> & Orders</span>
+    </div>
+    <div class="h-cart"><i class="bi bi-cart3"></i><span>cart</span></div>
+  </div>
+
+  <!-- /* -----------------------------------------------Post Header------------------------------- */ -->
+  <div class="ph-wrapper">
+    <div class="ph-all"><i class="bi bi-list"></i><span>All</span></div>
+    <div class="ph-categories">
+      <a href="#">Today's Deals</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Registry</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Sell</a>
+    </div>
+  </div>
+   <div class="flex bg-white text-black justify-between items-center drop-shadow-md max-sm:hidden">
+      <p class="para m-2 md:text-xs">
+        1-48 of over 200,000 results for <span class="text-yellow-800 text-base"><b>"health Care"</span>
+      </p>
+       <select title="links" name="featured " id="featured" class="bg-gray-100 mx-2 font-medium border-gray-950 text-xs py-1 hover:bg-gray-200 w-3/4 4 rounded-lg">
+          <option value="-1">Sort by: Featured</option>
+          <option value="1">Featured</option>
+          <option value="2">Price: Low to High</option>
+          <option value="3">Price: High to Low</option>
+          <option value="4">Avg. Customer Review</option>
+          <option value="5">Newest Arrivals</option>
+          <option value="6">Best Sellers</option>
+      </select>
+   </div>
+   <div class="btn font-normal space-x-1 border place-content-around mt-5 md:hidden">
+      <button class="border p-2 rounded-md text-sm"><a href="">Products</a></button>
+      <button class="border p-2 rounded-md text-sm"><a href="#"></a>Supplies</button>
+      <button class="border p-2 rounded-md text-sm"><a href="#"></a>Home</button>
+      <button class="border p-2 rounded-md text-sm"><a href="#"></a>Bearded Dragon</button>
+      <button class="border p-2 rounded-md text-sm"><a href="#"></a>French</button>
+   </div>
+<div class="flex flex-row overflow-hidden">
+   <div class="grid-col-2 text-black font-normal text-xm mt-4 no-underline ms-2  ">
+      <p class="font-bold text-black text-[13px]"> Recently used filters</p>
+      <p class=" hover:text-orange-700 text-[13px]"><a class="hover:text-orange-700 ms-2" href=""><i class="fa-solid fa-star" style="color: #d86a03;"></i>  <i class="fa-solid fa-star" style="color: #d86a03;"></i>  <i class="fa-solid fa-star" style="color: #d86a03;"></i>
+         <i class="fa-solid fa-star" style="color: #d86a03;"> <i class="fa-regular fa-star " style="color:#d86a03"></i></i>  & Up</a></p>
+     
+
+ <hr class= " line mt-2 ">
+    <ul class="text-[13px] font-[400] mt-3">
+   <li class=""><a class="hover:text-orange-700 ms-2" href=""><b>Departments</b></a></li>
+   <li class=" "><a class="hover:text-orange-700 ms-2"href="">Health & Household</a></li>
+   <li class=""><a class="hover:text-orange-700 ms-2" href="">Oral Care Products</a></li>
+   <li class=""><a class="hover:text-orange-700 ms-2"href="">Vitamins, Minerals & Supplements</a></li>
+   <li class=""><a class="hover:text-orange-700 ms-2" href="">Skin Care Products</a></li>
+   <li class=""><a class="hover:text-orange-700 ms-2" href="">Books</a></li>
+   <li class=""><a class="hover:text-orange-700 ms-2" href="">Medical Books</a></li>
+   <li class=""><a class="hover:text-orange-700 ms-2"href="">Health, Fitness & Dieting</a></li>
+   <li><a class="hover:text-orange-700 ms-2" href="">Politics & Social Sciences</a></li>
+    </ul>
+    <p class="font-bold text-black text-[13px]">FSA or HSA Eligible</p>
+    <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>    FSA or HSA Eligible</a></p>
+    <p class="font-bold text-black text-sm mt-2">Customer Reviews</p>
+    <p class="text-[13px] hover:text-orange-700"><i class="fa-solid fa-star" style="color: #d86a03;"></i>  <i class="fa-solid fa-star" style="color: #d86a03;"></i>  <i class="fa-solid fa-star" style="color: #d86a03;"></i>
+    <i class="fa-solid fa-star" style="color: #d86a03;"> <i class="fa-regular fa-star " style="color:#d86a03"></i></i>  & Up</p>
+    <p class="font-bold text-black text-[13px]">Price<br>
+      $0 –$1,700+</p>
+ 
+      <div class="range-slider">
+         <div class="track"></div>
+         <div class="range"></div>
+         <input type="range" min="0" max="100" value="25" id="range-min">
+         <input type="range" min="0" max="100" value="75" id="range-max">
+     </div>
+ 
+
+      <ul class="text-[13px] font-[400] mt-3">
+         <li class="hover:text-orange-700 "><a class="hover:text-orange-700 ms-2" href=""><b>Deals & Discounts</b></a></li>
+         <li class="hover:text-orange-700 "><a class="hover:text-orange-700 ms-2" href="">All  Discounts</a></li>
+         <li class="hover:text-orange-700 ms-2"><a class="hover:text-orange-700 ms-2" href="">Todays Deals</a></li>
+      </ul>
+      <p class="font-bold text-black text-[13px]">Brands</p>
+      <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Vicks</a></p>
+      <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>    Amazone Basic Care</a>
+      </p>
+      <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>  Tylenol</a></p>
+      <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>    Band-Aid</a></p>
+      <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>    Curad</a></p>
+      <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>  Refresh</a></p>
+      <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg  drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>  Ludens</a></p>
+      
+    <ul class="none">
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>  Zicam</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>   RENPHO</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>  Boiron</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>  Exedrin</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>   Breath Right</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>    TheraBreath</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>   Gadren Of Life</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>    Aquaphor</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>   Amazone Basics</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>    GoodBaby</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>   Prilosec</a></p>
+      <p class=" extra-item hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg  fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>  23andMe</a></p>
+
+  </ul>
+  
+  <!-- Button to toggle items -->
+  <button id="mybtn" class="transition-all text-blue-900 text-[13px] ">
+      See More
+  </button>
+  <p class="font-bold text-black text-[13px] mt-3">All Top Brands</p>
+      <p class="hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>Top Brands</a></p>
+      <p class="font-bold text-black text-[13px] mt-3">Sellers</p>
+  <ul class="none">
+   <p class=" extra-item2 2hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Amazone.com</a></p>
+   <p class=" extra-item2 hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i>  Herbs Daily</a></p>
+</ul>
+
+<!-- Button to toggle items -->
+<button id="mybtn2" class="transition-all text-blue-900 text-[13px] ">
+   See More
+</button>
+
+<p class="font-bold text-black text-[13px] mt-3">Health & Personal Care Feature</p>
+<ul class="none">
+ <p class=" extra-item2 2hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Aromatherapy</a></p>
+ <p class=" extra-item2 hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Homeopathic</a></p>
+ <p class=" extra-item2 2hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Hypoallergenic</a></p>
+ <p class=" extra-item2 hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg  drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Scented</a></p>
+</ul>
+<button id="mybtn2" class="transition-all text-blue-900 text-[13px] ">
+   See More
+</button>
+<p class="font-bold text-black text-[13px] mt-3"> Health & Personal Care Fornmat</p>
+<ul class="none">
+ <p class=" extra-item2 2hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg  drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Caplet</a></p>
+ <p class=" extra-item2 hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg  drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Capsule</a></p>
+ <p class=" extra-item2 2hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square  fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Chewable</a></p>
+ <p class=" extra-item2 hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg  drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Creams</a></p>
+ <p class=" extra-item2 hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square  fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Drops</a></p>
+</ul>
+<button id="mybtn2" class="transition-all text-blue-900 text-[13px] ">
+   See More
+</button>
+<p class="font-bold text-black text-[13px] mt-3">Amazon Local Stores</p>
+<ul class="none">
+ <p class=" extra-item2 2hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Bristol Farms</a></p>
+ <p class=" extra-item2 hover:text-orange-700  text-[13px] font-[400]"><a class="hover:text-orange-700 ms-2" href=""><i class="text-black-300  fa-icon fa-regular fa-square fa-lg drop-shadow-sm  hover:text-blue-500 transition duration-300 ease-in-out"></i> Weis</a></p>
+   </div>
+   <div class="grid-col-10 text-black font-normal text-xm mt-4 no-underline" style="margin-left: -4.5em;"   >
+      <h2 class="font-bold">Result</h2>
+      <div class="row1 flex flex-row space-x-2 ">
+         <div class="mt-3 border">
+            <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+              <!-- <div class="trap px-2">
+                <span>Best Seller</span></div> -->
+              <img src="assests/band aid.jpg" alt="Band aid" class="pt-7">
+            </div>
+            <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+      <span class="font-600 hover:text-orange-600 text-[17px]">Band-Aid Brand Adhesive Bandages Family Variety Pack, Sheer & Clear Flexible Sterile Individually Wrapped Bandages.... </span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">18,963</span>
+            </div>
+            <div>
+              <span class="font-normal text-gray-600 text-sm">80K+ bought in past month</span>
+            </div>
+            <div class=""> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">14</span><sup class="font-normal">56</sup></span><span class=" text-xs font-medium"> ($0.05/Count)</span>
+              <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$59.95</del></div>
+            <!-- <div>
+              <span class=" bg-green-400 inline-block px-1">Save $4.00</span>
+              <span class="font-medium text-xs"> with coupon</span>
+            </div> -->
+            <div class="mt-1 ms-1">
+              <span class="font-normal">Delivery </span>
+              <span class="font-medium">Wed, Jan 15 </span>
+            </div>
+            <div class="ms-1">
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+            <div class="flex flex-row mt-2">
+              <img src="Assests/leaf.jpeg" alt="logo" width="8%" class="mx-1  mb-1">
+              <span class="font-medium text-sm">1 sustainability feature</span>
+              <span class="fa-solid fa-angle-down ms-1 mt-1"></span></div>
+              <div class="btn">
+               <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+              </div>
+              <div class="mt-1 ms-1"><div>
+               <span class="text-gray-600 text-xm">More Buying Choices</span></div>
+               <span class="text-sm">$12.56</span><span class=" text-xs font-medium text-blue-800">(27 new offers)</span>
+               <div><span class="text-gray-600 text-xm font-medium">
+                  FSA or HSA eligible</span></div>
+              
+            </div>
+
+          </div>
+       </div>  
+        <!-------------------- row 1 pic 1 end --------------- -->
+        <div class="mt-3 border">
+         <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+           <div class="trap px-2">
+             <span>Best Seller</span></div>
+           <img src="assests/curad-removebg-preview.png" alt="Band aid" class="px-3 py-1">
+         </div>
+         <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+   <span class="font-600 hover:text-orange-600 text-[17px]">Curad Assorted Bandages Variety Pack 300 Pieces, Including Antibacterial, Heavy Duty, Fabr... </span>
+   <div><span class="bg-gray-200 text-sm p-1">300 Count (Pack of 1)</span></div>
+         <div>
+           <span class="mt-1">
+             <span class="fa fa-star checked text-orange-400"></span>
+             <span class="fa fa-star checked text-orange-400"></span>
+             <span class="fa fa-star checked text-orange-400"></span>
+             <span class="fa fa-star checked text-orange-400"></span>
+             <span class= "fa fa-star checked  text-orange-400"></span>
+             <span class="fa-solid fa-angle-down -ms-1"></span>
+             <span class="font-normal text-blue-800 hover:text-blue-950">28,488</span>
+         </div>
+         <div>
+           <span class="font-normal text-gray-600 text-sm">20K+ bought in past month</span>
+         </div>
+         <div class=""> 
+           <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">10</span><sup class="font-normal">18</sup></span><span class=" text-xs font-medium"> ($0.03/Count)</span>
+           <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$11.99</del></div>
+         <div class="mt-1 ms-1">
+           <span class="font-normal">Delivery </span>
+           <span class="font-medium">Wed, Jan 15 </span>
+         </div>
+         <div class="ms-1">
+           <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+         </div>
+           <div class="btn">
+            <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1 mt-3">Add to Cart</button>
+           </div>
+           <div class="mt-1 ms-1">
+            
+            <span class="text-gray-600 text-xm font-medium">
+               FSA or HSA eligible</span></div>
+            </div>
+       </div>
+       <!-- row 1 pc 2 end -->
+           <div class="mt-3 border">
+            <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+              <img src="assests/tmj-removebg-preview.png" alt="Band aid" class="p-6">
+            </div>
+            <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+      <span class="font-600 hover:text-orange-600 text-[17px]">SandoKare TMJ Relief Products Jaw, TMJ Relief Massager, Vibration and Heating... </span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">43</span>
+            </div>
+            <div>
+              <span class="font-normal text-gray-600 text-sm">600+ bought in past month</span>
+            </div>
+            <div class=""> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">35</span><sup class="font-normal">99</sup></span><span class=" text-xs font-medium"> ($35.99/Count)</span>
+              <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$59.95</del></div>
+            <div>
+              <span class=" bg-green-400 inline-block px-1">Save 15%</span>
+              <span class="font-medium text-xs"> with coupon</span>
+            </div>
+            <div class="mt-3 ms-1">
+              <span class="font-normal">Delivery </span>
+              <span class="font-medium">Wed, Jan 15 </span>
+            </div>
+            <div class="ms-1 ">
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+          
+              <div class="btn mt-3">
+               <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+              </div>
+            </div>
+
+          </div>
+          <!-- ----------------row 1 pic 3 end -------------->
+          <div class="mt-3 border">
+            <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+              <!-- <div class="trap px-2">
+                <span>Best Seller</span></div> -->
+              <img src="assests/school-removebg-preview.png" alt="Band aid" class="p-6">
+            </div>
+            <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+      <span class="font-600 hover:text-orange-600 text-[17px]">School Health - Adhesive Bandages, Comfortable Form-Fitting Protection & Wound Care... </span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">18,963</span>
+            </div>
+            <div>
+            </div>
+            <div class=""> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">67</span><sup class="font-normal">99</sup></span><span class=" text-xs font-medium"> ($0.05/Count)</span>
+             </div>
+            <div class="mt-1 ms-1">
+              <span class="font-normal">Delivery </span>
+              <span class="font-medium">Wed, Jan 15 </span>
+            </div>
+            <div class="ms-1">
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+              <div class="btn mt-2">
+               <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+              </div>
+          </div>
+       </div>  
+       <!-- row 1  pic 4end -->
+       </div>
+        <!-- row 1 end -->
+          <!-- row 2 -->
+        <div class="row2 flex flex-row space-x-2 ">
+         <div class="mt-3 border">
+            <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+              <div class="trap px-2">
+                <span>Best Seller</span></div>
+              <img src="assests/breath_right-removebg-preview.png" alt="Band aid" class="px-10 py-1">
+            </div>
+            <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+      <span class="font-600 hover:text-orange-600 text-[17px]">Breathe Right Nasal Strips | Extra Strength | Clear | For Sensitive Skin I Drug-Free Snoring....</span>
+            <div>
+               <div><span class="bg-gray-200 text-sm p-1">44 Count (Pack of 1)</span></div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">13,100</span>
+            </div>
+            <div>
+            
+            </div>
+            <div class=""> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">9</span><sup class="font-normal">81</sup></span><span class=" text-xs font-medium"> ($0.22/Count)</span>
+              <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$19.99</del></div>
+
+            <div class="mt-1 ms-1">
+              <span class="font-normal text-sm">$40.65 delivery</span>
+      
+            </div>
+            <div class="ms-1">
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+         
+              <div class="btn">
+               <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+              </div>
+              <div class="mt-1 ms-1">
+               <div><span class="text-gray-600 text-xm font-medium">
+                  FSA or HSA eligible</span></div>
+               </div>
+
+          </div>
+       </div>  
+        <!-------------------- row 2 pic 1 end --------------- -->
+        <div class="mt-3 border">
+         <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+           
+           <img src="assests/therma-removebg-preview.png" alt="Band aid" class="px-5 py-2">
+         </div>
+         <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+   <span class="font-600 hover:text-orange-600 text-[17px]">ThermaCare Advanced Back & Hip Therapy Adhesive HeatWraps, Disposable Heat... </span>
+   <div><span class="bg-gray-200 text-sm p-1">10 Count</span></div>
+         <div>
+           <span class="mt-1">
+             <span class="fa fa-star checked text-orange-400"></span>
+             <span class="fa fa-star checked text-orange-400"></span>
+             <span class="fa fa-star checked text-orange-400"></span>
+             <span class="fa fa-star checked text-orange-400"></span>
+             <span class= "fa fa-star checked fa-star-half-stroke text-orange-400"></span>
+             <span class="fa-solid fa-angle-down -ms-1"></span>
+             <span class="font-normal text-blue-800 hover:text-blue-950">2,864</span>
+         </div>
+         <div class=""> 
+           <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">29</span><sup class="font-normal">99</sup></span><span class=" text-xs font-medium"> ($3.00/Count)</span>
+         </div>
+         <div class="mt-1 ms-1">
+            <span class="font-normal text-sm">$50.55 delivery</span>
+         </div>
+         <div class="ms-1">
+           <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+         </div>
+           <div class="btn">
+            <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1 mt-3">Add to Cart</button>
+           </div>
+           <div class="mt-1 ms-1">
+            
+            <span class="text-gray-600 text-xm font-medium">
+               FSA or HSA eligible</span></div>
+            </div>
+       </div>
+       <!-- row 2 pic 2 end -->
+           <div class="mt-3 border">
+            <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+              <img src="assests/liquid_bandagad-removebg-preview.png" alt="Band aid" class="px-11 py-2">
+            </div>
+            <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+      <span class="font-600 hover:text-orange-600 text-[17px]">Bactine MAX Liquid Bandage with Lidocaine - Wound Cleaning Liquid Bandage for Skin - Kills 99% of Germs, Covers, Protects... </span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">2,108</span>
+            </div>
+            <div>
+              <span class="font-normal text-gray-600 text-sm">7k+ bought in past month</span>
+            </div>
+            <div class=""> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">5</span><sup class="font-normal">97</sup></span><span class=" text-xs font-medium"> ($19.90/Fl Oz)</span>
+              <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$7.10</del></div>
+            <div class="mt-3 ms-1">
+              <span class="font-normal">Delivery </span>
+              <span class="font-medium">Wed, Jan 15 </span>
+            </div>
+            <div class="ms-1 ">
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+          
+              <div class="btn mt-3">
+               <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+              </div>
+            </div>
+
+          </div>
+          <!-- ----------------row 2 pic 3 end -------------->
+          <div class="mt-3 border">
+            <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+              <!-- <div class="trap px-2">
+                <span>Best Seller</span></div> -->
+              <img src="assests/cincom-removebg-preview.png" alt="Band aid" class="p-6">
+            </div>
+            <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+      <span class="font-600 hover:text-orange-600 text-[17px]">CINCOM Leg Massager for Circulation and Pain Relief,Air Compression Calf Massager with </span>
+            <div>
+               <div><span class="bg-gray-200 text-sm p-1">1 Count (Pack of 1)</span></div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">11,525</span>
+            </div>
+            <div>
+               <span class="font-normal text-gray-600 text-sm">4k+ bought in past month</span>
+             </div>
+            <div class=""> 
+              <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">59</span><sup class="font-normal">99</sup></span><span class=" text-xs font-medium"> ($59.99/Count)</span>
+              <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$59.99</del>
+             </div>
+             <div>
+               <span class=" bg-green-400 inline-block px-1">Save 15%</span>
+               <span class="font-medium text-xs"> with coupon</span>
+             </div>
+            <div class="mt-1 ms-1">
+              <span class="font-normal">Delivery </span>
+              <span class="font-medium">Wed, Jan 15 </span>
+            </div>
+            <div class="ms-1">
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+              <div class="btn mt-2">
+               <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+               <div>
+               <span class="text-gray-600 text-xm">More Buying Choices</span></div>
+               <span class="text-sm">$12.56</span><span class=" text-xs font-medium text-blue-800">(27 new offers)</span></div>
+               <div><span class="text-gray-600 text-xm font-medium">
+                  FSA or HSA eligible</span></div>
+               </div>
+               </div>
+           <!-- row 2  pic 4end -->
+          </div>
+
+          <div class="row3 flex flex-row space-x-2 ">
+            <div class="mt-3 border">
+               <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                 <img src="assests/ludenz-removebg-preview.png" alt="Ludens" class="px-16 py-1 ">
+               </div>
+               <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+         <span class="font-600 hover:text-orange-600 text-[17px]">Ludens Soothing Throat Drops, Green Apple, 25 count (Pack of 1)</span>
+               <div>
+                  <div><span class="bg-gray-200 text-sm p-1">25 Count (Pack of 1)</span></div>
+                 <span class="mt-1">
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa-regular fa-star text-orange-400"></span>
+                   <span class="fa-solid fa-angle-down -ms-1"></span>
+                   <span class="font-normal text-blue-800 hover:text-blue-950">2,009</span>
+               </div>
+               <div class="btn">
+                <button class="bg-gray-100 border rounded-3xl text-xs px-3 py-2 hover:bg-gray-500 ms-1">See Option</button>
+               </div>
+                 <div class="mt-1 ms-1">
+                  <div><span class="text-gray-600 text-xs font-medium">
+                    No featured offers available</span></div>
+                  </div>
+                  <span class="text-sm">$12.56</span><span class=" text-xs font-medium text-blue-800">(27 new offers)</span>
+             </div>
+          </div>  
+           <!-------------------- row 3 pic 1 end --------------- -->
+           <div class="mt-3 border">
+            <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+              
+              <img src="assests/lotrimin-removebg-preview.png" alt="Band aid" class=" py-16">
+            </div>
+            <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+      <span class="font-600 hover:text-orange-600 text-[17px]">Lotrimin AF Cream: Athlete's Foot 1% Clotrimazole Antifungal Treatment, Clinically Proven...</span>
+      <div><span class="bg-gray-200 text-sm p-1">1.1 Ounce (Pack of 1)</span>
+      </div>
+      <span class="text-xs">Options</span><span class=" text-xs font-medium text-blue-800">2 size</span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class= "fa fa-star checked fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">1,667</span>
+            </div>
+            <div>
+              <span class="font-normal text-gray-600 text-sm">6k+ bought in past month</span>
+            </div>
+            <div class="btn">
+              <button class="bg-gray-100 border rounded-3xl text-xs px-3 py-2 hover:bg-gray-500 ms-1">See Option</button>
+             </div>
+            <div class="ms-1">
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+            <div class="mt-1 ms-1">
+              <div><span class="text-gray-600 text-xs font-medium">
+                No featured offers available</span></div>
+              </div>
+              <span class="text-sm">$12.56</span><span class=" text-xs font-medium text-blue-800">(1 new offer)</span>
+               </div>
+          </div>
+          <!-- -----------row 3 pic 2 end ------->
+              <div class="mt-3 border">
+               <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                 <img src="assests/Baby_rooming_kit-removebg-preview.png" alt="Band aid" class="px-4">
+               </div>
+               <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+         <span class="font-600 hover:text-orange-600 text-[17px]">Baby Grooming Kit, Infant Safety Care Set with Hair Brush Comb Nail Clipper Nasal Aspirator,Ba... </span>
+               <div>
+                 <span class="mt-1">
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                   <span class="fa-solid fa-angle-down -ms-1"></span>
+                   <span class="font-normal text-blue-800 hover:text-blue-950">1,426</span>
+               </div>
+               <div>
+                 <span class="font-normal text-gray-600 text-sm">6k+ bought in past month</span>
+               </div>
+               <div class=""> 
+                 <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">5</span><sup class="font-normal">97</sup></span><span class=" text-xs font-medium"> ($19.90/Fl Oz)</span>
+                 <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$7.10</del></div>
+               <div class="mt-3 ms-1">
+                 <span class="font-normal">Delivery </span>
+                 <span class="font-medium">Wed, Jan 15 </span>
+               </div>
+               <div class="ms-1 ">
+                 <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+               </div>
+             
+                 <div class="btn mt-3">
+                  <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+                 </div>
+               </div>
+   
+             </div>
+             <!-- ----------------row 3 pic 3 end -------------->
+             <div class="mt-3 border">
+               <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                 <!-- <div class="trap px-2">
+                   <span>Best Seller</span></div> -->
+                 <img src="assests/master_medi-removebg-preview.png" alt="Band aid" class="p-6">
+               </div>
+               <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+         <span class="font-600 hover:text-orange-600 text-[17px]">MasterMedi Tongue Scraper for Adults with Multicolor Travel Cases (2 Pack), 100% Stainless...</span>
+               <div>
+                  <div><span class="bg-gray-200 text-sm p-1">2 Count (Pack of 1)</span></div>
+                 <span class="mt-1">
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                   <span class="fa-solid fa-angle-down -ms-1"></span>
+                   <span class="font-normal text-blue-800 hover:text-blue-950">114,525</span>
+               </div>
+               <div>
+                  <span class="font-normal text-gray-600 text-sm">40k+ bought in past month</span>
+                </div>
+                <div>
+                  <span class=" bg-rose-700 inline-block px-1 font-bold text-sm text-white">Limitted Time Deal</span>
+                
+                </div>
+               <div class=""> 
+                 <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">7</span><sup class="font-normal">67</sup></span><span class=" text-xs font-medium"> ($59.99/Count)</span>
+                 <span class="font-normal text-xs">Typical: </span><del class="font-thin text-xm">$59.99</del>
+               </div>
+                  </div>
+                  </div>
+              <!-- row 3  pic 4end -->
+             </div>
+
+             <div class="row4 flex flex-row space-x-2 ">
+              <div class="mt-3 border">
+                 <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw]  " >
+                   <!-- <div class="trap px-2">
+                     <span>Best Seller</span></div> -->
+                   <img src="assests/monistat-removebg-preview.png" alt="Ludens" class="px-[7.5vw]">
+                 </div>
+                 <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+           <span class="font-600 hover:text-orange-600 text-[17px]">Monistat Boric Acid Feminine Cleanser, Fragrance Free Feminine Wash, 10 Fl Oz, 1 Pack.
+            </span>
+                 <div>  
+                  <span class="font-normal text-gray-600 text-sm">40k+ bought in past month</span>
+                </div>
+                <div>
+                   <span class="mt-1">
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa-regular fa-star text-orange-400"></span>
+                     <span class="fa-solid fa-angle-down -ms-1"></span>
+                     <span class="font-normal text-blue-800 hover:text-blue-950">9,570</span>
+                 </div>
+                 <div class=""> 
+                  <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">4</span><sup class="font-normal">98</sup></span><span class=" text-xs font-medium"> ($0.50/Fl oz)</span>
+                  <span class="font-normal text-xs">Typical: </span><del class="font-thin text-xm">$6.98</del>
+                </div>
+                <div class="ms-1 ">
+                  <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+                </div>
+                
+                <div class="btn mt-3">
+                  <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+                 </div>
+                 </div>
+            </div>  
+             <!-------------------- row 3 pic 1 end --------------- -->
+             <div class="mt-3 border">
+              <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                
+                <img src="assests/arthrittis-removebg-preview.png" alt="Band aid" class=" px-16">
+              </div>
+              <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+        <span class="font-600 hover:text-orange-600 text-[17px]">Arthrittis Athlete's Foot 1% Clotrimazole Antifungal Treatment, Clinically Proven...</span>
+        <div><span class="bg-gray-200 text-sm p-1">1.1 Ounce (Pack of 1)</span>
+        </div>
+        <span class="text-xs">Options</span><span class=" text-xs font-medium text-blue-800">2 size</span>
+              <div>
+                <span class="mt-1">
+                  <span class="fa fa-star checked text-orange-400"></span>
+                  <span class="fa fa-star checked text-orange-400"></span>
+                  <span class="fa fa-star checked text-orange-400"></span>
+                  <span class="fa fa-star checked text-orange-400"></span>
+                  <span class= "fa fa-star checked fa-star-half-stroke text-orange-400"></span>
+                  <span class="fa-solid fa-angle-down -ms-1"></span>
+                  <span class="font-normal text-blue-800 hover:text-blue-950">1,667</span>
+              </div>
+              <div>
+                <span class="font-normal text-gray-600 text-sm">6k+ bought in past month</span>
+              </div>
+              <div class="btn">
+                <button class="bg-gray-100 border rounded-3xl text-xs px-3 py-2 hover:bg-gray-500 ms-1">See Option</button>
+               </div>
+              <div class="ms-1">
+                <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+              </div>
+              <div class="mt-1 ms-1">
+                <div><span class="text-gray-600 text-xs font-medium">
+                  No featured offers available</span></div>
+                </div>
+                <span class="text-sm">$12.56</span><span class=" text-xs font-medium text-blue-800">(1 new offer)</span>
+                 </div>
+            </div>
+            <!-- -----------row 3 pic 2 end ------->
+                <div class="mt-3 border">
+                 <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                   <img src="assests/health_smart-removebg-preview.png" alt="Band aid" class="px-16">
+                 </div>
+                 <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+           <span class="font-600 hover:text-orange-600 text-[17px]">Health_smart Infant Safety Care Set with Hair Brush Comb Nail Clipper Nasal Aspirator,Ba... </span>
+                 <div>
+                   <span class="mt-1">
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                     <span class="fa-solid fa-angle-down -ms-1"></span>
+                     <span class="font-normal text-blue-800 hover:text-blue-950">1,426</span>
+                 </div>
+                 <div>
+                   <span class="font-normal text-gray-600 text-sm">6k+ bought in past month</span>
+                 </div>
+                 <div class=""> 
+                   <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">5</span><sup class="font-normal">97</sup></span><span class=" text-xs font-medium"> ($19.90/Fl Oz)</span>
+                   <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$7.10</del></div>
+                 <div class="mt-3 ms-1">
+                   <span class="font-normal">Delivery </span>
+                   <span class="font-medium">Wed, Jan 15 </span>
+                 </div>
+                 <div class="ms-1 ">
+                   <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+                 </div>
+               
+                   <div class="btn mt-3">
+                    <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+                   </div>
+                 </div>
+     
+               </div>
+               <!-- ----------------row 3 pic 3 end -------------->
+               <div class="mt-3 border">
+                 <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                   <!-- <div class="trap px-2">
+                     <span>Best Seller</span></div> -->
+                   <img src="assests/geniani-removebg-preview.png" alt="Band aid" class="px-8 py-2">
+                 </div>
+                 <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+           <span class="font-600 hover:text-orange-600 text-[17px]">MasterMedi Tongue Scraper for Adults with Multicolor Travel Cases (2 Pack), 100% Stainless...</span>
+                 <div>
+                    <div><span class="bg-gray-200 text-sm p-1">2 Count (Pack of 1)</span></div>
+                   <span class="mt-1">
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa fa-star checked text-orange-400"></span>
+                     <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                     <span class="fa-solid fa-angle-down -ms-1"></span>
+                     <span class="font-normal text-blue-800 hover:text-blue-950">114,525</span>
+                 </div>
+                 <div>
+                    <span class="font-normal text-gray-600 text-sm">40k+ bought in past month</span>
+                  </div>
+                  <div>
+                    <span class=" bg-rose-700 inline-block px-1 font-bold text-sm text-white">Limitted Time Deal</span>
+                  
+                  </div>
+                 <div class=""> 
+                   <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">7</span><sup class="font-normal">67</sup></span><span class=" text-xs font-medium"> ($59.99/Count)</span>
+                   <span class="font-normal text-xs">Typical: </span><del class="font-thin text-xm">$59.99</del>
+                 </div>
+                    </div>
+                    </div>
+                <!-- row 3  pic 4end -->
+               </div>
+               
+          <div class="row3 flex flex-row space-x-2 ">
+            <div class="mt-3 border">
+               <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                 <!-- <div class="trap px-2">
+                   <span>Best Seller</span></div> -->
+                 <img src="assests/frownies-removebg-preview.png" alt="Ludens" class="px-3 py-16">
+               </div>
+               <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+         <span class="font-600 hover:text-orange-600 text-[17px]">Frownies faicail patces 25 count (Pack of 1)</span>
+               <div>
+                  <div><span class="bg-gray-200 text-sm p-1">25 Count (Pack of 1)</span></div>
+                 <span class="mt-1">
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa-regular fa-star text-orange-400"></span>
+                   <span class="fa-solid fa-angle-down -ms-1"></span>
+                   <span class="font-normal text-blue-800 hover:text-blue-950">2,009</span>
+               </div>
+               <div class="btn">
+                <button class="bg-gray-100 border rounded-3xl text-xs px-3 py-2 hover:bg-gray-500 ms-1">See Option</button>
+               </div>
+                 <div class="mt-1 ms-1">
+                  <div><span class="text-gray-600 text-xs font-medium">
+                    No featured offers available</span></div>
+                  </div>
+                  <span class="text-sm">$12.56</span><span class=" text-xs font-medium text-blue-800">(27 new offers)</span>
+             </div>
+          </div>  
+           <!-------------------- row 3 pic 1 end --------------- -->
+           <div class="mt-3 border">
+            <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+              
+              <img src="assests/inspire-removebg-preview.png" alt="Band aid" class=" px-8 py-5">
+            </div>
+            <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+      <span class="font-600 hover:text-orange-600 text-[17px]">Inspired Athlete's Foot 1% Clotrimazole Antifungal Treatment, Clinically Proven...</span>
+      <div><span class="bg-gray-200 text-sm p-1">1.1 Ounce (Pack of 1)</span>
+      </div>
+      <span class="text-xs">Options</span><span class=" text-xs font-medium text-blue-800">2 size</span>
+            <div>
+              <span class="mt-1">
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class="fa fa-star checked text-orange-400"></span>
+                <span class= "fa fa-star checked fa-star-half-stroke text-orange-400"></span>
+                <span class="fa-solid fa-angle-down -ms-1"></span>
+                <span class="font-normal text-blue-800 hover:text-blue-950">1,667</span>
+            </div>
+            <div>
+              <span class="font-normal text-gray-600 text-sm">6k+ bought in past month</span>
+            </div>
+            <div class="btn">
+              <button class="bg-gray-100 border rounded-3xl text-xs px-3 py-2 hover:bg-gray-500 ms-1">See Option</button>
+             </div>
+            <div class="ms-1">
+              <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+            </div>
+            <div class="mt-1 ms-1">
+              <div><span class="text-gray-600 text-xs font-medium">
+                No featured offers available</span></div>
+              </div>
+              <span class="text-sm">$12.56</span><span class=" text-xs font-medium text-blue-800">(1 new offer)</span>
+               </div>
+          </div>
+          <!-- -----------row 3 pic 2 end ------->
+              <div class="mt-3 border">
+               <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                 <img src="assests/theralCE-removebg-preview.png" alt="Band aid" class="px-14">
+               </div>
+               <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+         <span class="font-600 hover:text-orange-600 text-[17px]">TheralCE Infant Safety Care Set with Hair Brush Comb Nail Clipper Nasal Aspirator,Ba... </span>
+               <div>
+                 <span class="mt-1">
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                   <span class="fa-solid fa-angle-down -ms-1"></span>
+                   <span class="font-normal text-blue-800 hover:text-blue-950">1,426</span>
+               </div>
+               <div>
+                 <span class="font-normal text-gray-600 text-sm">6k+ bought in past month</span>
+               </div>
+               <div class=""> 
+                 <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">5</span><sup class="font-normal">97</sup></span><span class=" text-xs font-medium"> ($19.90/Fl Oz)</span>
+                 <span class="font-normal text-xs">List: </span><del class="font-thin text-xm">$7.10</del></div>
+               <div class="mt-3 ms-1">
+                 <span class="font-normal">Delivery </span>
+                 <span class="font-medium">Wed, Jan 15 </span>
+               </div>
+               <div class="ms-1 ">
+                 <span class="text-sm font-normal mt-1">Ships to Pakistan</span>
+               </div>
+             
+                 <div class="btn mt-3">
+                  <button class="bg-yellow-400 border rounded-3xl text-xs px-3 py-2 hover:bg-yellow-500 ms-1">Add to Cart</button>
+                 </div>
+               </div>
+   
+             </div>
+             <!-- ----------------row 3 pic 3 end -------------->
+             <div class="mt-3 border">
+               <div class="bg-gray-100  border-none border-radius h-[36vh] w-[20vw] px-2 " >
+                 <!-- <div class="trap px-2">
+                   <span>Best Seller</span></div> -->
+                 <img src="assests/master_medi-removebg-preview.png" alt="Band aid" class="p-6">
+               </div>
+               <div class="  w-[20vw] h-[63vh] px-2 mt-3 font-arail">
+         <span class="font-600 hover:text-orange-600 text-[17px]">MasterMedi Tongue Scraper for Adults with Multicolor Travel Cases (2 Pack), 100% Stainless...</span>
+               <div>
+                  <div><span class="bg-gray-200 text-sm p-1">2 Count (Pack of 1)</span></div>
+                 <span class="mt-1">
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa fa-star checked text-orange-400"></span>
+                   <span class="fa-regular fa-star-half-stroke text-orange-400"></span>
+                   <span class="fa-solid fa-angle-down -ms-1"></span>
+                   <span class="font-normal text-blue-800 hover:text-blue-950">114,525</span>
+               </div>
+               <div>
+                  <span class="font-normal text-gray-600 text-sm">40k+ bought in past month</span>
+                </div>
+                <div>
+                  <span class=" bg-rose-700 inline-block px-1 font-bold text-sm text-white">Limitted Time Deal</span>
+                
+                </div>
+               <div class=""> 
+                 <span><sup class="font-normal">$</sup><span class=" text-[2rem] font-medium">7</span><sup class="font-normal">67</sup></span><span class=" text-xs font-medium"> ($59.99/Count)</span>
+                 <span class="font-normal text-xs">Typical: </span><del class="font-thin text-xm">$59.99</del>
+               </div>
+                  </div>
+                  </div>
+              <!-- row 3  pic 4end -->
+             </div>
+       </div> 
+     
+       </div>
+       <!-- grid col 10 -->
+       <div class="pre-footer">
+        <a href="#"> Back to top</a>
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer">
+          <div class="footerlinks">
+            <h6>Get to Know Us</h6>
+            <div class="f-links">
+              <a href="#">Careers</a>
+              <a href="#">Blog</a>
+              <a href="#">About Amazon</a>
+              <a href="#">Investor Relations</a>
+              <a href="#">Amazon Devices</a>
+              <a href="#">Amazon Science</a>
+            </div>
+          </div>
+  
+          <div class="footerlinks">
+            <h6>Make Money with Us</h6>
+            <div class="f-links">
+              <a href="#">Sell products on Amazon</a>
+              <a href="#">Sell on Amazon Business</a>
+              <a href="#">Sell apps on Amazon</a>
+              <a href="#">Become an Affiliate</a>
+              <a href="#">Advertise Your Products </a>
+              <a href="#">Self-Publish with Us</a>
+              <a href="#">Host an Amazon Hub</a>
+              <a href="#">See More Make Money with Us</a>
+            </div>
+          </div>
+  
+          <div class="footerlinks">
+            <h6>Amazon Payment Products</h6>
+            <div class="f-links">
+              <a href="#">Amazon Business Card</a>
+              <a href="#">Shop with Points</a>
+              <a href="#">Reload Your Balance</a>
+              <a href="#">Amazon Currency Converter</a>
+            </div>
+          </div>
+  
+          <div class="footerlinks">
+            <h6>Let Us Help You</h6>
+            <div class="f-links">
+              <a href="#">Amazon & COVID-19</a>
+              <a href="#">Your Account</a>
+              <a href="#">Your Order</a>
+              <a href="#">Shipping Rates & Policies</a>
+              <a href="#">Return & Replacements</a>
+              <a href="#">Shipping Rates & Policies</a>
+              <a href="#">Manage Your Content & Devices</a>
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class="f-logo">
+          <a href="#"><img src="assests/logo.png" alt="" /></a>
+        </div>
+        <div class="f2-links">
+          <a href="#"><i class="bi bi-globe2"></i><span>English</span></a>
+          <a href="#">$ USD-U.S.Dollar</a>
+          <a href="#"
+            ><img src="https://flagsapi.com/US/flat/64.png" /><span
+              >United States</span
+            ></a
+          >
+        </div>
+      </div>
+      <div class="p-footer-wrapper">
+        <div class="p-footer">
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Amazon Music</a>
+            <a href="#">Stream millions of songs</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Amazon Ads</a>
+            <a href="#">Reach customers wherever they spend their time</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">6pm</a>
+            <a href="#">Score deals on fashion brands</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">AbeBooks</a>
+            <a href="#">Books, art & collectibles</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">ACX</a>
+            <a href="#">Audio Book Publishing Makes Easy</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Sell on Amazon</a>
+            <a href="#">Start a Selling Account</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Veeqo</a>
+            <a href="#">Shipping Software Inventory Management</a>
+          </div>
+        </div>
+  
+  
+        <div class="p-footer">
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Amazon Business</a>
+            <a href="#">Everything For Your Business</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">AmazonGlobal</a>
+            <a href="#">Ship Orders
+              Internationally	</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Home Services</a>
+            <a href="#">Experienced Pros
+              Happiness Guarantee</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Amazon Web Services</a>
+            <a href="#">Scalable Cloud
+              Computing Services</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">	Audible</a>
+            <a href="#">Listen to Books & Original
+              Audio Performances</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Box Office Mojo</a>
+            <a href="#">Find Movie
+              Box Office Data</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Goodreads</a>
+            <a href="#">Book reviews
+              & recommendations</a>
+          </div>
+        </div>
+  
+        <div class="p-footer">
+          <div class="p-footer-links">
+            <a href="#" id="p-link">IMDb</a>
+            <a href="#">Movies, TV
+              & Celebrities	</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">IMDbPro</a>
+            <a href="#">Get Info Entertainment
+              Professionals Need</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Kindle Direct Publishing</a>
+            <a href="#">Indie Digital & Print Publishing
+              Made Easy</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Prime Video Direct</a>
+            <a href="#">Video Distribution
+              Made Easy</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">	Shopbop</a>
+            <a href="#">Designer
+              Fashion Brands</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Woot!</a>
+            <a href="#">Deals and
+              Shenanigans</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">	Zappos</a>
+            <a href="#">Shoes &
+              Clothing</a>
+          </div>
+        </div>
+  
+  
+        <div class="p-footer1">
+          <div class="p-footer-links">
+            <a href="#" id="p-link">Ring</a>
+            <a href="#">Smart Home
+              Security Systems</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">eero WiFi</a>
+            <a href="#">Stream 4K Video
+              in Every Room</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">	Blink</a>
+            <a href="#">Smart Security
+              for Every Home</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">	Neighbors App</a>
+            <a href="#">Real-Time Crime
+              & Safety Alerts</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">	Amazon Subscription Boxes</a>
+            <a href="#">Top subscription boxes – right to your door</a>
+          </div>
+  
+          <div class="p-footer-links">
+            <a href="#" id="p-link">PillPack</a>
+            <a href="#">Pharmacy Simplified</a>
+          </div>
+  
+        </div>
+      </div>
+      <div class="p-footer2">
+        <div class="p-footer2-links">
+          <a href="#">Conditions of Use</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#">Customer Health Data Privacy Disclosure</a>
+          <a href="#">Your Ads Privacy Choices</a>
+        </div>
+        <div class="p-footer2-desc"><span>&#169 1996-2025, Amazon.com, Inc. or its affiliates</span></div>   
+      </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+<script src="script/health.js"></script>
+</body>
+</html>
